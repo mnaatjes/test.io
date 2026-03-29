@@ -1,0 +1,40 @@
+generator:
+  id: "state-orchestrator-v1"
+  version: "1.0.0"
+  description: "Directives for generating module-specific state files and synchronizing the master manifest."
+
+  # 1. Global Directives & Safety
+  global_directives:
+    - "Locking Protocol: If a 'Monitor' triggers a 'Generator' while a state file is being manually edited, you could hit a race condition. Include a 'locked: false' key in all generated state files. Background monitors MUST skip any file where 'locked: true'."
+    - "Atomic Synchronization: The master JSON manifest must only be updated after a successful YAML state write and validation check."
+    - "Traceability: Every state update must include a timestamp and a reference to the triggering event."
+
+  # 2. Input Requirements
+  input_params:
+    module_name: "The target domain (e.g., 'academy', 'account', 'scripts')."
+    template_ref: "The path to the schema in .agents/templates/state_tracking/."
+    initial_data: "Optional payload to seed the state file."
+
+  # 3. State Generation Logic (.agents/state/state.<module_name>.yml)
+  state_generation:
+    destination: ".agents/state/state.{module_name}.yml"
+    logic:
+      - "Initialize: Load the template defined in 'template_ref'."
+      - "Inject Metadata: Add standard fields for 'locked', 'last_sync', and 'version'."
+      - "Monitor Dependency Check: Search .agents/monitors/ for 'monitor.{module_name}.yml'."
+      - "Dependency Action: If monitor is MISSING, trigger 'generator.monitors.yml' to create it before finalizing state."
+      - "Instruction Injection: Add a directive to the state file instructing the CLI to check the monitor status before every read/write."
+
+  # 4. Manifest Synchronization Logic (.agents/manifests/state.json)
+  manifest_sync:
+    destination: ".agents/manifests/state.json"
+    transformation_rules:
+      - "Aggregation: Read all .agents/state/state.*.yml files."
+      - "Filtering: Exclude internal logic directives; include only data-value objects and statuses."
+      - "Validation: Ensure the resulting JSON matches the master system topology."
+      - "Checksum: Generate a hash of the combined state to detect manual changes outside the CLI."
+
+  # 5. Environment-Specific Logic (Debian 13 / i3wm)
+  environment_hooks:
+    - "Log all state transitions to .agents/logs/state_transitions.log."
+    - "Ensure the JSON manifest is optimized for fast parsing by the Gemini CLI on the hpprodesk."

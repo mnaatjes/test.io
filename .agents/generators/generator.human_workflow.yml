@@ -1,0 +1,40 @@
+workflow_generator:
+  id: "workflow-distiller-v1"
+  version: "1.0.0"
+  description: "Converts complex testing/dev tasks into concise, actionable i3wm-optimized workflows."
+
+  # 1. Input Processing
+  input_requirements:
+    - "User Intent: [The goal of the workflow]"
+    - "Constraints: [Time, OS, or specific Test IO rules]"
+    - "Context: [Cite main.yml for hardware/OS environment]"
+
+  # 2. Distillation Logic (The "ETL" of Instructions)
+  distillation_rules:
+    - "Minimalism: No step may exceed 10 words."
+    - "Command-First: Lead with the terminal command or keybind where applicable."
+    - "Dependency-Check: Ensure prerequisite steps (e.g., 'Connect VPN') are listed first."
+    - "Parallel_Avoidance: Focus on a single linear path to prevent cognitive overwhelm."
+
+  # 3. Output A: Human-Readable Markdown ("workflow_<name>.md")
+  markdown_output:
+    destination: "workspace/workflows/workflow_{name}.md"
+    structure:
+      - "Header: # [TASK NAME] Workflow"
+      - "Status: [ ] Current Progress"
+      - "Execution: Numbered list of bolded actions."
+      - "Toolbox: List of required commands/scripts for this specific task."
+    formatting:
+      - "Use [X] for checkboxes."
+      - "Bold all i3wm keybinds (e.g., **$mod+Shift+Enter**)."
+      - "ADHD_Rule: Maximum 5 steps per 'Phase'."
+
+  # 4. Output B: Agent-Optimized State ("workflow_<name>.agent.json")
+  json_output:
+    destination: "workspace/workflows/workflow_{name}.agent.json"
+    schema:
+      workflow_id: "string"
+      current_step: "integer"
+      total_steps: "integer"
+      required_env: ["debian", "i3wm", "test-io"]
+      completion_criteria: "array[strings]"

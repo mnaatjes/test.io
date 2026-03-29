@@ -1,0 +1,45 @@
+generator:
+  id: "manifest-synthesizer-v1"
+  version: "1.0.0"
+  description: "Directives for generating high-speed JSON manifests for each major .agents/ directory."
+
+  # 1. Global Safety & Locking Directives
+  global_directives:
+    - "Race Condition Prevention: If a 'Monitor' triggers a 'Generator' while a state file is being manually edited, you could hit a race condition. All generators MUST respect the 'locked: true' key in any .yml file. If a file in the target directory is locked, the manifest update for that specific entry must be skipped or marked as 'stale'."
+    - "Atomic Writes: Manifests must be written to a temporary file first and then moved to the final destination to prevent corruption during an active read."
+
+  # 2. Input Requirements
+  input_params:
+    target_dir: "The directory to index (e.g., 'generators', 'state', 'monitors')."
+    output_filename: "manifest.{target_dir}.json"
+
+  # 3. Transformation Logic (YAML to JSON Aggregation)
+  transformation_rules:
+    - "Discovery: Recursively scan the target directory for all .yml files."
+    - "Metadata Extraction: For each file, capture: filename, path, last_modified, and checksum."
+    - "Content Parsing: Extract top-level 'id', 'version', and 'description' keys from each YAML file."
+    - "State Injection: If the target is 'state/', include the current 'locked' status and 'last_sync' timestamp."
+    - "Monitor Cross-Reference: Check for a corresponding file in .agents/monitors/ and flag as 'monitored: true/false'."
+
+  # 4. Output Specification (.agents/manifests/*.json)
+  json_output:
+    destination: ".agents/manifests/manifest.{target_dir}.json"
+    schema:
+      directory: "string"
+      total_files: "integer"
+      last_manifest_update: "timestamp"
+      files:
+        - name: "string"
+          path: "string"
+          type: "string (e.g., generator, template, state)"
+          metadata: "object (extracted from YAML)"
+          status:
+            locked: "boolean"
+            monitored: "boolean"
+            checksum: "string"
+
+  # 5. Environment Hooks (Debian 13 / i3wm)
+  environment_hooks:
+    - "Trigger: This generator is typically called by a monitor defined in .agents/monitors/."
+    - "Logging: Output sync events to .agents/logs/manifest_events.log."
+    - "Performance: Ensure JSON output is minified for fast loading into the CLI memory on the hpprodesk."

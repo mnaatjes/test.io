@@ -1,0 +1,54 @@
+title: "Functional Bugs: Assessment and Severity"
+author: "Markus"
+updated: "Over a month ago"
+
+definition:
+  core_concept: "Bugs related to the functionality of software (action-response failure)."
+  examples: ["Button doesn't submit", "Search doesn't react", "App crashes"]
+  identification_strategy:
+    - "Differentiate between broken features and intentional design."
+    - "Test features in isolation and in combination."
+    - "Provide evidence (e.g., a field is validated in some cases but not others)."
+    - "If a visual/content issue hinders functionality, report it as Functional."
+    - "Consistent behavior in different scenarios is likely 'Intended' (Usability Suggestion)."
+
+severity_assessment_factors:
+  impact: "How relevant is the functionality to the whole product?"
+  extent: "How many users, products, or items are affected?"
+  workarounds: "Is there an intuitive/easy alternative route? (Showstopper = No workaround for main functionality)."
+  loss_of_sales: "Secondary factor; potential financial impact on the customer."
+  comparison: "Check previously approved bugs in the same test for consistency."
+
+severity_levels:
+  LOW:
+    - "Minimal impact on product usage."
+    - "General usage is not affected."
+    - "Few users/items concerned."
+    - "Broken feature has an easy workaround."
+  HIGH:
+    - "Serious impact, but main functionality remains intact."
+    - "Large number of users/items concerned."
+    - "Non-trivial functionality is broken with no workaround."
+    - "Important functionality is broken but a workaround exists (not a showstopper)."
+  CRITICAL:
+    - "Prevents core functionality of the app/site."
+    - "Showstopper in a main process (e.g., checkout)."
+    - "Potential and notable loss of sales."
+
+special_categories:
+  edge_cases:
+    definition: "Bugs occurring via unusual/uncommon sets of actions."
+    status: "Forwarded as 'Low' if relevant; rejected if irrelevant."
+    examples: ["Minimizing app immediately after clicking", "Rapidly opening/closing menus"]
+  forced_bugs:
+    definition: "Nontypical behavior not reflecting normal user patterns."
+    status: "Generally OUT OF SCOPE/Rejected."
+    examples:
+      - "Tapping multiple elements simultaneously."
+      - "Random/Fast-paced button clicking."
+      - "Non-typical window resizing/zooming."
+      - "Full RAM/Internal memory issues."
+      - "Using unofficial/beta/modified OS versions."
+
+resources:
+  - "Bug Assessment Sheet (fixed severity list)"

@@ -1,0 +1,46 @@
+title: "What does a regular test entail and how to submit a bug?"
+author: "Markus"
+updated: "Over 2 months ago"
+
+test_lifecycle:
+  invitations:
+    mechanism: "Distribution algorithm matches profile, devices, and performance."
+    location: "Email and 'Interesting tests for you' dashboard section."
+    recommendation: "List all devices (wearables, streaming, etc.) to increase invites."
+  
+  participation_rules:
+    tester_levels:
+      copper: "Level 1. Max 2 active test cycles at once."
+      bronze_plus: "Level 2+. Unlimited active cycles (management of time is user responsibility)."
+    quitting: "Possible via the 3-dots menu in the sidebar or the 'Quit test' button in the action bar."
+
+  pre_test_requirements:
+    steps:
+      1: "Read all instructions and feature descriptions."
+      2: "Answer 'Will you participate?' (Positive to proceed, Negative to provide feedback)."
+      3: "Select the device (limited seats per device type)."
+    prohibitions:
+      - "No browser AddOn translators (content must remain in original language)."
+      - "No exposing customer data to 3rd party translation tools (confidentiality)."
+
+  execution_phase:
+    access: "Test environment visible only after test starts and 'participation' is confirmed."
+    setup: "Install mobile/streaming apps if applicable."
+    action: "Start a 'Test Session' to enable the 'Submit Bug' button."
+
+  review_and_feedback:
+    team_leader_role:
+      - "Review submitted reports."
+      - "Request more info if needed."
+      - "Approve (Forward to customer) or Reject."
+    customer_role:
+      - "Final decision (Accept/Reject)."
+      - "Can request info even after the cycle ends (check email notifications)."
+    disputes:
+      - "Use report comments to ask TL for clarification."
+      - "Open a dispute if disagreement persists or TL is unresponsive."
+
+  support_channels:
+    primary: "Team Leader via the cycle chat feature."
+    community: "Discord (Test IO Community) and Social Media."
+    educational: "Academy articles and podcasts on 'Understanding Tests Setup'."

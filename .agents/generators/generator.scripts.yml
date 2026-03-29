@@ -1,0 +1,40 @@
+script_generator:
+  id: "script-architect-v1"
+  version: "1.0.1"
+  description: "Directives for generating functional scripts (Bash, Python, etc.) based on behavioral intent."
+
+  # 1. Input Specifications
+  input_requirements:
+    behavior: "Detailed description of what the script must accomplish."
+    primary_command: "The core utility or CLI tool to be wrapped (e.g., scrcpy, ffmpeg, curl)."
+    expected_output: "The desired terminal output, file format, or side effect."
+    constraints: "e.g., 'Must be POSIX compliant' or 'Python 3.11 only'."
+
+  # 2. Logic & Synthesis Rules
+  transformation_logic:
+    - "Language Selection: Default to Bash for system/CLI wrappers; Python for data/ETL tasks."
+    - "Environment Alignment: Hard-code paths or variables for Debian 13/i3wm compatibility."
+    - "Safety Injection: Always include 'set -e' for Bash or try/except blocks for Python."
+    - "Documentation: Generate a minimalist header with usage instructions and dependencies."
+
+  # 3. Output A: Executable Script ("/srv/test.io/.scripts/<script_name>")
+  script_output:
+    destination: "/srv/test.io/.scripts/{script_name}"
+    structure:
+      - "Shebang: #!/bin/bash or #!/usr/bin/env python3"
+      - "Metadata: Author, Date, and Description."
+      - "Implementation: The core logic based on 'behavior' and 'commands'."
+      - "Permissions: Suggest 'chmod +x' in the terminal summary."
+    formatting:
+      - "ADHD_Optimized: Use clear variable names and inline comments for complex logic."
+      - "Modularity: Wrap distinct tasks in functions."
+
+  # 4. Output B: Agent-Optimized Manifest ("/srv/test.io/.scripts/<script_name>.agent.json")
+  json_output:
+    destination: "/srv/test.io/.scripts/{script_name}.agent.json"
+    schema:
+      script_id: "string"
+      language: "string"
+      dependencies: ["array[strings]"]
+      environment: "Debian 13 / i3wm"
+      behavior_summary: "string"

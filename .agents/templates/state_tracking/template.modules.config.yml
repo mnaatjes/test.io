@@ -1,0 +1,24 @@
+config:
+  module_ref: "[MODULE_ID]"
+  
+  # Infrastructure & API Settings (Use placeholders for secrets)
+  endpoints:
+    base_url: "https://api.[SERVICE].com/v1"
+    auth_method: "Bearer Token"
+  
+  # Local Environment Variables
+  environment:
+    os: "[OPERATING_SYSTEM]"
+    shell: "[SHELL_TYPE]"
+    log_level: "INFO"
+  
+  # Directory Paths for I/O
+  paths:
+    input_dir: "./data/input"
+    output_dir: "./data/output"
+    log_file: "./logs/[MODULE_ID].log"
+
+# Optional: Module-specific preferences
+preferences:
+  auto_submit: false
+  retry_attempts: 3

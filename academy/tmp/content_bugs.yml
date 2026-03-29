@@ -1,0 +1,49 @@
+title: "Content Bugs"
+author: Markus
+updated: 10 months ago
+
+definition:
+  core_concept: "Bugs relating to the actual content of websites or apps (text, labels, pictures, videos, icons, links, data)."
+  typical_examples:
+    - "Broken links or images (404s)"
+    - "Defective redirections (general)"
+    - "Missing text (e.g., empty tooltips or content areas)"
+    - "Missing content (e.g., inconsistency in icon tooltips)"
+    - "Missing translations (e.g., French labels on an English site)"
+    - "Missing products in search results (when search function works)"
+    - "Missing data"
+
+repetition_rule:
+  policy: "Submit ONLY ONCE."
+  description: "If a content problem occurs repetitively, even with different URLs/images, it must be reported in a single report."
+  requirement: "The report should state that other instances are also concerned."
+  rejection_reason: "Individual reports for every occurrence will be rejected."
+  examples:
+    - "Multiple broken product pictures."
+    - "Multiple 404 download links for manuals."
+    - "Missing translations across several labels/snippets."
+
+functional_upgrade_criteria:
+  upgrade_to_functional:
+    - "If a content bug prevents a functionality."
+    - "If the bug occurs in a functional component (navigation menu, header, footer, breadcrumbs)."
+  stay_as_content:
+    - "If the functionality can be reached intuitively via a different path."
+  severity_note: "Content bugs in navigational components are typically 'Low' functional bugs."
+
+documentation:
+  requirement: "Must contain screenshots."
+  reference: "See Bug Report Requirements for more details."
+
+out_of_scope:
+  - "Spelling problems (typos)."
+  - "Dummy texts/missing content on staging environments (often intentional)."
+
+image_guide:
+  broken_images:
+    indicators: ["Error icon", "Blank space", "Broken image symbol"]
+    causes: ["Incorrect URLs", "Server problems", "File corruption", "Network issues"]
+  placeholder_images:
+    definition: "Intentionally used temporary visual representations."
+    indicators: ["Geometric shapes", "Solid colors", "Icons", "Boxes with 'Image' text"]
+    status: "NOT a bug (serves a temporary purpose)."

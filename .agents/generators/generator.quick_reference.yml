@@ -1,0 +1,21 @@
+quick_reference:
+  topic: "[TOPIC_NAME]"
+  source_module: "academy/onboarding/[MODULE_NAME].yml"
+  last_updated: "2026-03-29"
+
+  # The "ADHD-Friendly" terminal output section
+  cli_summary:
+    - "!! CRITICAL: [High-priority rule in one sentence]"
+    - "-> ACTION: [Specific step to take]"
+    - "X  AVOID: [Common reason for rejection/penalty]"
+  
+  # Deep-context for the Agent's reasoning
+  logic_directives:
+    - "[Requirement 1 from source material]"
+    - "[Requirement 2 from source material]"
+    - "Context: [Why this rule exists to help Agent avoid edge cases]"
+
+  # Fast-check for submission time
+  final_validation:
+    - "Check A: [e.g., Is the screencast under 15MB?]"
+    - "Check B: [e.g., Does the title follow the [Feature] - [Issue] format?]"

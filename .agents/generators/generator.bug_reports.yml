@@ -1,0 +1,49 @@
+bug_report_generator:
+  id: "bug-report-processor-v1"
+  version: "1.0.0"
+
+  # 1. Input Specifications
+  input_sources:
+    environment_context: "main.yml"
+    raw_evidence: "evidence/current_cycle/"
+    formats: ["yml", "log", "json", "mp4"]
+
+  # 2. Transformation & Refinement Logic
+  transformation_logic:
+    - "Deduplication: Verify steps against previous reports in reports/submitted/."
+    - "Normalization: Map severity and type to official Test IO Academy standards."
+    - "Environment Injection: Auto-populate hardware/OS details from main.yml (e.g., Debian 13/i3wm)."
+    - "Technical Validation: Ensure 'Actual Result' is supported by console/terminal logs."
+
+  # 3. Output A: Human-Readable Submission ("bug_report_<feature>.md")
+  markdown_output:
+    destination: "reports/drafts/bug_report_{feature}.md"
+    structure:
+      title: "[{feature}] - {summary}"
+      metadata:
+        type: "{type}" # Functional, Visual, Usability, Content
+        severity: "{severity}" # Low, High, Critical
+        environment: "OS: {active_dev_os} | Browser: {browser}"
+      content:
+        - "### Reproduction Steps"
+        - "{numbered_steps}"
+        - "### Expected Result"
+        - "{expected_behavior}"
+        - "### Actual Result"
+        - "{observed_bug}"
+      formatting:
+        - "Use bolding for UI elements and error codes."
+        - "ADHD_Optimized: Maximum 3 sentences per result description."
+
+  # 4. Output B: Agent-Optimized Record ("bug_report_<feature>.agent.json")
+  json_output:
+    destination: "reports/drafts/bug_report_{feature}.agent.json"
+    schema:
+      bug_id: "string (UUID)"
+      timestamp: "ISO-8601"
+      technical_stack:
+        os: "Debian 13"
+        wm: "i3wm"
+        logs_included: "boolean"
+      reproducibility_rate: "3/3"
+      trace_id: "string (for internal tracking)"

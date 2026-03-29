@@ -1,0 +1,44 @@
+title: "Visual Bugs"
+author: "Markus"
+updated: "11 months ago"
+
+definition:
+  core_concept: "Bugs relating to the graphical user interfaces (GUI) of websites or apps."
+  typical_examples:
+    - "Layout framework problems (e.g., misaligned text/elements)"
+    - "Responsive Design problems (e.g., element visible on one device but not another)"
+    - "Text/elements unintentionally overlapping"
+    - "Text/elements cut off"
+    - "Anything fixable in HTML or CSS files"
+
+repetition_rule:
+  policy: "Submit ONLY ONCE."
+  description: "If a visual problem occurs repetitively across different URLs or pages, it must be reported in a single report."
+  requirement: "The report should state that other instances are also concerned."
+  rejection_reason: "Individual reports for every occurrence will be rejected."
+  examples:
+    - "Multiple elements showing the same graphical scaling problem."
+    - "Input fields across the site too small for default text."
+    - "Multiple teasers overlapping other elements."
+
+functional_upgrade_criteria:
+  upgrade_to_functional:
+    - "If a visual bug prevents a functionality."
+  stay_as_visual:
+    - "If the functionality can be reached intuitively and easily via a different path or option."
+
+documentation:
+  requirement: "Must contain screenshots."
+  optional: "Screencast required if an action causes the visual problem."
+  reference: "See Bug Report Requirements for more details."
+
+responsive_design_insights:
+  common_issues:
+    - "Inconsistent scaling between different pages."
+    - "Text becoming illegible on specific screen sizes."
+    - "Navigation elements/targets becoming too small to tap."
+    - "Unintended horizontal scrolling."
+  tools:
+    - name: "Google Chrome Lighthouse"
+      purpose: "Evaluates mobile usability factors (font size, tap targets, viewport configuration)."
+      usage: "Run directly on the tested website via Chrome browser."

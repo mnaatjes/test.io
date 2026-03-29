@@ -1,0 +1,17 @@
+module:
+  id: "[MODULE_ID]" # e.g., account-manager, bug-drafter
+  version: "1.0.0"
+  description: "Brief description of the module's primary function."
+
+# High-level behavioral rules for this specific module
+directives:
+  - "Rule 1: Always [ACTION] when [CONDITION]."
+  - "Rule 2: Never include [SENSITIVE_DATA] in output."
+  - "Rule 3: Use [SPECIFIC_TONE] for all responses."
+
+# Definitions for how this module interacts with the project context
+context_mapping:
+  primary_source: "modules/[DOMAIN]/config.yml"
+  supporting_docs:
+    - "docs/[TOPIC].md"
+  output_format: "markdown" # options: json, markdown, plain_text

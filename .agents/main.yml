@@ -1,0 +1,43 @@
+project:
+  name: "TestIO-Agent-CLI"
+  version: "1.0.2"
+  description: "Directive-based CLI for managing Test IO account and Academy progress."
+
+# Global identity injected into all sub-modules
+identity:
+  legal_name: "Michael Naatjes"
+  location: "Kalamazoo, MI"
+  professional_focus: "Technical QA & ETL Development"
+  portfolio: "https://mnaatjes.github.io/"
+
+# Updated Device Inventory for Bug Reporting & Invitations
+environment:
+  computers:
+    - "Desktop | Windows 11"
+    - "Desktop | Linux Debian"
+    - "Desktop | Linux Mint"
+    - "Desktop | Linux Ubuntu"
+  smartphones:
+    - "Samsung Galaxy S21 FE 5G | Android 16"
+  tablets:
+    - "Samsung Galaxy Tab A8 10.5 (2021) | Android 16"
+  
+  # Default environment for current active work
+  active_dev_os: "Debian 13 (Trixie)"
+  window_manager: "i3wm"
+
+# Module Registry
+modules:
+  account: "./modules/account/config.yml"
+  academy:
+    root: "./modules/academy/main.yml"
+    submodules:
+      onboarding: "./modules/academy/onboarding/general.yml"
+      bugs: "./modules/academy/onboarding/bugs.yml"
+
+# System Directives for the Agent
+global_directives:
+  - "Always maintain a professional, technical tone."
+  - "When drafting bug reports, prioritize reproducibility and technical logs."
+  - "Keep responses concise and ADHD friendly in formatting"
+  - ""

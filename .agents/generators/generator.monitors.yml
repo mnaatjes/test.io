@@ -1,0 +1,41 @@
+generator:
+  id: "monitor-architect-v1"
+  version: "1.0.0"
+  description: "Directives for creating event-driven monitors that trigger state updates."
+
+  # 1. Global Safety Directives
+  global_directives:
+    - "Race Condition Prevention: If a 'Monitor' triggers a 'Generator' while a state file is being manually edited, you could hit a race condition. Include a 'Locking' mechanism in all state.agent.yml files to prevent the background monitor from overwriting manual edits."
+    - "Source Integrity: Monitors must never modify raw evidence; they only trigger transformations into structured state."
+
+  # 2. Input Requirements for Monitor Generation
+  input_requirements:
+    scope_name: "The functional area being watched (e.g., 'academy', 'account')."
+    watch_path: "The specific directory or file to monitor for changes."
+    event_types: ["on_create", "on_modify", "on_delete"]
+    target_generator: "The ID of the generator to trigger (e.g., 'notes-processor-v1')."
+    script_required: "Boolean: Does this monitor require a new background script in .scripts/?"
+
+  # 3. Monitor Blueprint (Requirements to be satisfied)
+  monitor_template:
+    id: "monitor.{scope_name}"
+    path: ".agents/monitors/monitor.{scope_name}.yml"
+    fields:
+      - "status: active | paused"
+      - "lock_check: Path to the .lock file or 'locked' key in state.yml"
+      - "debounce_ms: Time to wait after a change before triggering (to allow manual saves)."
+      - "action: The CLI command to execute (e.g., 'tio-cli generate {target_generator}')."
+
+  # 4. Script Generation/Amendment Logic
+  script_integration:
+    destination: "/srv/test.io/.scripts/monitor_{scope_name}.sh"
+    logic:
+      - "If script_required is true, generate a Bash script using 'inotifywait' or 'watchdog'."
+      - "The script MUST check the state file for a 'locked: true' key before execution."
+      - "If the state is locked, the script should log a skip event and exit gracefully."
+
+  # 5. Output Execution
+  output_actions:
+    - "Generate YML: Create .agents/monitors/monitor.{scope_name}.yml."
+    - "Generate State Hook: Update .agents/state/{scope_name}/state.agent.yml with 'locked: false' by default."
+    - "Manifest Update: Append the new monitor to the project MANIFEST.json."

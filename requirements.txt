@@ -1,0 +1,18 @@
+# --- Core Dependencies (from etl-pipeline) ---
+pydantic
+pydantic-settings
+httpx
+requests
+psutil
+ijson
+rich
+watchdog
+
+# --- System & Agent Logic ---
+PyYAML
+pathlib
+
+# --- Development & Testing ---
+pytest
+pytest-mock
+bump2version

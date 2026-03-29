@@ -1,0 +1,38 @@
+title: "What does my bug report's status mean and what's the next step?"
+author: "Markus"
+updated: "Over a month ago"
+
+lifecycle:
+  phases:
+    - status: "Awaiting Review"
+      description: "Initial state after filing. Pending Team Leader (TL) review."
+    - status: "Request by Test IO"
+      description: "TL needs more info. You have 24 hours to edit, or it will be rejected."
+    - status: "Forwarded to customer"
+      description: "Passed TL review. Bug payout is issued. Visible to customer."
+    - status: "Rejected by Test IO"
+      description: "TL rejected the report. Can be disputed if you believe the decision is wrong."
+    - status: "Request by customer"
+      description: "Customer needs clarification. 24-hour response window."
+    - status: "Accepted by customer"
+      description: "Customer confirmed the bug. Additional 10% bonus payout issued."
+    - status: "Rejected by customer"
+      description: "Customer rejected, but you keep the initial bug payout (due to TL approval)."
+    - status: "Archived"
+      description: "No active decision by customer after 10 days; report preserved."
+
+rules:
+  deletion: "You can only delete your own report if it has NOT been reviewed by the TL yet."
+  dispute: "Available for 'Rejected by Test IO' status."
+  payouts:
+    bug_payout: "Triggered at 'Forwarded to customer'."
+    customer_bonus: "10% additional, triggered at 'Accepted by customer'."
+
+important_notes:
+  prior_acceptance: "Past acceptance does not guarantee future acceptance. Rules, requirements, or intentional behaviors can change."
+  rejection_scenarios:
+    - "Customer clarifies behavior is intentional after a previous 'unsure' TL approval."
+    - "Requirements changed but not yet added to 'Known Bugs'."
+    - "Cycle instructions have changed (always read them carefully)."
+    - "Dispute manager/TL/CSM specifically asked you to stop submitting that specific issue."
+    - "Overall Test IO rules in the Academy have been updated."

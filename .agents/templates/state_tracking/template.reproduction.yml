@@ -1,0 +1,24 @@
+reproduction_task:
+  # Reference Info
+  original_bug_id: "#12345"
+  original_title: "Copy the title from the original report"
+
+  # Your Testing Environment
+  test_device:
+    device_name: "Samsung Galaxy S21 FE 5G" #
+    os_version: "Android 16"                #
+    browser: "Chrome Mobile"
+
+  # Findings
+  is_reproducible: true # options: true, false
+  reproducibility_rate: "3/3" # e.g., Reproduced 3 times out of 3 attempts
+
+  # Observations
+  notes: |
+    On Android 16, the behavior is consistent with the original report. 
+    The crash occurs immediately after the splash screen.
+  
+  # Evidence for Test IO
+  attachments:
+    - type: "Screenshot"
+      filename: "repro_evidence_android.png"

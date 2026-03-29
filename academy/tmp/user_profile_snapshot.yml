@@ -1,0 +1,18 @@
+profile_snapshot:
+  account:
+    screenname: "michael.naatjes"
+    seats_used: "0 / 2"
+    status: "Tester"
+  personal_data:
+    first_name: "Michael"
+    last_name: "Naatjes"
+    birthday: "1987-09-29"
+    country: "United States"
+  sections_available:
+    - "Skills & Experience"
+    - "Payout Data"
+    - "Locale Options"
+    - "Account"
+    - "Notifications"
+  identity_verification:
+    notes: "To change birthday or country, support must be contacted."

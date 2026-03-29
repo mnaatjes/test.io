@@ -1,0 +1,39 @@
+title: "What to do if the Test Case step fails?"
+author: "Evgeniya Graich"
+updated: "Over a year ago"
+
+failure_options:
+  - option: "Submit a new test case bug report"
+    condition: "The bug has NOT been submitted by any other tester yet."
+    process:
+      - "Click 'Failed' in the test case execution form."
+      - "Select 'Submit a new bug'."
+      - "Choose bug type (Functional, Content, or Visual)."
+      - "For Functional: Select Severity (Low, High, Critical)."
+      - "Follow regular bug report requirements for details."
+    notes: "Reviewed by TL and customer; subject to rejection if invalid."
+
+  - option: "Submit a test case bug reproduction"
+    condition: "The same bug has already been submitted by another tester."
+    process:
+      - "Select the appropriate bug report from the drop-down list."
+      - "Provide an attachment meeting standard reproduction requirements."
+    rules:
+      - "Cannot edit the original report or your reproduction once submitted."
+      - "30-minute seat reservation upon starting."
+      - "Active session disallows starting other sessions (User Stories, Fix Confirmations, etc.) simultaneously."
+    tracking: "Viewable under 'My Issues > My Reproductions'."
+
+  - option: "Link a known bug"
+    condition: "The bug is present in the cycle's 'Known Bugs' list."
+    process:
+      - "Select 'Failed' in step execution."
+      - "Open the menu and identify the Known Bug by its badge icon."
+      - "Review Bug Details."
+      - "Upload a required screencast in the 'Link Known Bug' section."
+      - "Click 'Link known bug' to proceed."
+
+related_concepts:
+  - "Bug Reproductions"
+  - "Test Case Testing"
+  - "Known Bugs List"

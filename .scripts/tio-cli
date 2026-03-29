@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+import os
+import sys
+import yaml
+import json
+import argparse
+from datetime import datetime
+from pathlib import Path
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich.text import Text
+
+# Project Constants
+ROOT_DIR = Path("/srv/test.io")
+AGENT_DIR = ROOT_DIR / ".agents"
+MANIFEST_DIR = AGENT_DIR / "manifests"
+
+console = Console()
+
+# Shorthand Mapping
+COMMAND_MAP = {
+    "g": ("generate", "Run a system generator", "generators/"),
+    "s": ("state", "Manage or sync module state", "state/"),
+    "m": ("monitor", "Trigger/Configure system monitors", "monitors/"),
+    "v": ("venv", "Manage Python virtual environment", "environment/"),
+    "q": ("quick_ref", "Display ADHD-friendly cheat sheets", "generators/"),
+    "n": ("notes", "Synthesize data into Markdown notes", "generators/"),
+    "w": ("workflow", "Generate execution checklists", "templates/workflows/"),
+    "l": ("list", "Show command registry table", "N/A"),
+    "h": ("help", "Show detailed usage & syntax", "N/A"),
+    "sync": ("sync", "Synchronize all JSON manifests", "manifests/")
+}
+
+class TioOrchestrator:
+    def __init__(self):
+        MANIFEST_DIR.mkdir(parents=True, exist_ok=True)
+
+    def show_usage(self):
+        """Outputs ADHD-friendly syntax and formatting rules."""
+        syntax_text = Text.from_markup(
+            "[bold cyan]SYNTAX:[/bold cyan]\n"
+            "  [green]tio <shorthand> <module>[/green]\n\n"
+            "[bold cyan]FORMATTING RULES:[/bold cyan]\n"
+            "  • [yellow]Shorthands:[/yellow] Single characters (g, s, m, v, etc.)\n"
+            "  • [yellow]Modules:[/yellow] The name of the target file without the prefix (e.g., 'bugs' for 'generator.bugs.yml')\n"
+            "  • [yellow]Locking:[/yellow] If a file has 'locked: true', automation will skip it.\n\n"
+            "[bold cyan]EXAMPLES:[/bold cyan]\n"
+            "  [white]tio g bugs[/white]       -> Drafts a new bug report\n"
+            "  [white]tio q reporting[/white]  -> Shows bug reporting rules\n"
+            "  [white]tio sync[/white]         -> Rebuilds all system manifests"
+        )
+        console.print(Panel(syntax_text, title="[bold magenta]Tio-CLI Usage Guide[/bold magenta]", expand=False))
+
+    def list_commands(self):
+        table = Table(title="[bold cyan]Command Registry[/bold cyan]", show_header=True, header_style="bold magenta")
+        table.add_column("Short", style="dim", width=6, justify="center")
+        table.add_column("Command", style="green")
+        table.add_column("Description")
+        table.add_column("Target Path", style="yellow")
+        for short, (full, desc, path) in COMMAND_MAP.items():
+            table.add_row(short, full, desc, path)
+        console.print(table)
+
+    def check_lock(self, yml_path):
+        if not yml_path.exists(): return False
+        with open(yml_path, 'r') as f:
+            try:
+                data = yaml.safe_load(f)
+                return data.get('locked', False) if data else False
+            except: return False
+
+    def sync_all(self):
+        console.print("[yellow]Syncing all system manifests...[/yellow]")
+        directories = ["generators", "monitors", "state", "templates", "environment"]
+        for target in directories:
+            target_path = AGENT_DIR / target
+            if not target_path.exists(): continue
+            m_data = {"directory": target, "last_update": datetime.now().isoformat(), "files": []}
+            for yml_file in target_path.glob("**/*.yml"):
+                m_data["files"].append({
+                    "name": yml_file.stem.split('.')[-1],
+                    "path": str(yml_file.relative_to(ROOT_DIR)),
+                    "locked": self.check_lock(yml_file)
+                })
+            with open(MANIFEST_DIR / f"manifest.{target}.json", 'w') as f:
+                json.dump(m_data, f, indent=2)
+            console.print(f"  [green]✔[/green] manifest.{target}.json updated")
+
+    def run(self, cmd_input, module):
+        if cmd_input in ["h", "help", "usage"]:
+            self.show_usage()
+        elif cmd_input in ["l", "list", None]:
+            self.list_commands()
+        elif cmd_input == "sync":
+            self.sync_all()
+        else:
+            resolved = COMMAND_MAP.get(cmd_input)
+            if not resolved:
+                console.print(f"[bold red]!! ERROR:[/bold red] Unknown command '{cmd_input}'")
+            else:
+                console.print(f"[bold cyan]>[/bold cyan] Running [bold]{resolved[0]}[/bold] for [green]{module or 'system'}[/green]...")
+
+def main():
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("cmd", nargs="?", help="Command or shorthand")
+    parser.add_argument("module", nargs="?", help="Target module")
+    args = parser.parse_args()
+    TioOrchestrator().run(args.cmd, args.module)
+
+if __name__ == "__main__":
+    main()

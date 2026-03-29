@@ -1,0 +1,35 @@
+title: "Introduce Discord application as Test IO Community communication tool"
+author: "Irina Lebedzeva"
+updated: "Over 10 months ago"
+
+overview:
+  role: "Official communication channel for major events, activities, and community connection."
+  purpose:
+    - "Connect with other members globally."
+    - "Communicate in mother tongues."
+    - "Ask questions and get advice."
+    - "Receive latest news and announcements."
+    - "Participate in fun activities."
+
+platform_basics:
+  definition: "A group-chatting platform supporting communities of all types (gaming, business, etc.)."
+  availability: ["Windows", "macOS", "Android", "iOS", "iPadOS", "Linux", "Web browsers"]
+  features:
+    - "Intuitive, user-friendly interface."
+    - "Supports 29 languages."
+    - "Free unlimited features (voice/video calling, streaming)."
+    - "Highly customizable interaction controls."
+
+discord_glossary:
+  servers: "Spaces dedicated to specific communities with their own members, topics, and rules."
+  channels:
+    text: "Used for messages, file uploads, and image sharing."
+    voice: "Real-time voice/video calls and screen sharing."
+  direct_messages:
+    private: "One-on-one private conversations."
+    group_dm: "Private groups of up to ten people (requires invitation)."
+  screen_sharing: "Available in both servers and DMs."
+
+recommendations:
+  etiquette: "Always check with another member if they are willing to start an audio/video call before initiating it."
+  resources: "Refer to the official Discord guide for basics."

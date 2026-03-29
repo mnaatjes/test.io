@@ -1,0 +1,30 @@
+bug_report:
+  # Identification
+  title: "[Feature] - Short, descriptive summary of the issue"
+  type: "Functional" # options: Functional, Visual, Usability, Content
+  severity: "Low"    # options: Low, High, Critical
+
+  # Environment Data (Populated by main.yml)
+  environment:
+    os: "Desktop | Linux Debian" #
+    browser: "Firefox 124.0"
+    version_details: "Debian 13 (Trixie) / i3wm" #
+
+  # The Core Evidence
+  reproduction_steps:
+    - "1. Navigate to [URL]"
+    - "2. Action: [e.g., Click 'Submit' without entering data]"
+    - "3. Action: [e.g., Observe the console output]"
+  
+  expected_result: "The system should [DESCRIBE INTENDED BEHAVIOR]."
+  actual_result: "The system instead [DESCRIBE OBSERVED BUG]."
+
+  # Technical Attachments
+  attachments:
+    - type: "Screencast"
+      filename: "bug_video_01.mp4"
+    - type: "System Log"
+      filename: "terminal_output.log"
+      description: "Standard output from Debian terminal" #
+    - type: "Console Log"
+      filename: "browser_errors.json"

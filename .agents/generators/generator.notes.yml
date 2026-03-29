@@ -1,0 +1,36 @@
+notes_generator:
+  id: "notes-processor-v1"
+  topic: "[TOPIC_NAME]"
+  version: "1.0.0"
+
+  # 1. Input Specifications
+  input_sources:
+    supported_formats: ["yml", "csv", "md", "json"]
+    source_path: "evidence/raw_data/[TOPIC_NAME]/"
+  
+  # 2. Processing & Synthesis Rules
+  transformation_logic:
+    - "Deduplication: Identify and merge identical rules or requirements across files."
+    - "Consolidation: Group related fragments (e.g., all rules about 'Screen Recordings') into single sections."
+    - "Conflict Resolution: If two sources conflict, prioritize."
+    - "Normalization: Standardize all technical terms to match the Test IO Glossary."
+
+  # 3. Output A: Human-Readable Markdown ("notes_<topic_name>.md")
+  markdown_output:
+    destination: "academy/notes/notes_[TOPIC_NAME].md"
+    structure:
+      - "Header: # [TOPIC_NAME] Reference Notes"
+      - "Summary: A 2-3 sentence high-level overview."
+      - "Main Body: Organized by 'Functional Area' using H2 and H3 tags."
+      - "Formatting: Use bolding for critical keywords and task lists for requirements."
+      - "ADHD_Optimized: Ensure no paragraph exceeds 3 sentences."
+
+  # 4. Output B: Agent-Optimized JSON ("notes_<topic_name>.agent.json")
+  json_output:
+    destination: "academy/notes/notes_[TOPIC_NAME].agent.json"
+    schema:
+      topic: "string"
+      last_processed: "timestamp"
+      entities: "array[objects]" # Specific rules, UI elements, or bug categories
+      constraints: "array[strings]" # List of 'Never' and 'Always' rules for the agent
+      metadata_tags: ["linux", "debian", "qa-standard"] #

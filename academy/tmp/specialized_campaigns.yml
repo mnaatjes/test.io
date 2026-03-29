@@ -1,0 +1,36 @@
+title: "Quickly learn how to join the first specialized testing campaign"
+author: "Zorica Micanovic"
+updated: "Over a year ago"
+
+campaign_onboarding:
+  process:
+    - "Click referrer link."
+    - "Follow short sign-up process."
+    - "Add Devices and Languages to your profile via the Dashboard."
+  benefits:
+    - "Skip regular Onboarding and courses."
+    - "Automatically approved for all tasks."
+    - "Immediate access to running product tests (if profile matches requirements)."
+  warnings: "System displays red/warning bars if missing required devices or languages for a specific campaign."
+
+test_participation:
+  accepting_tests:
+    - "Click the test cycle card on the dashboard."
+    - "Read and perfectly understand cycle instructions."
+    - "Check 'I've read all instructions' and click 'Yes, I will test!'."
+  test_sessions:
+    purpose: "Required to submit bugs, reproductions, User Stories, or Test Cases."
+    mechanism: "Red 'Start Test Session' button at the top of the Test Overview page."
+    constraints:
+      max_duration: "4 hours (can be extended or restarted)."
+      annotations: "Optional field to describe your testing plan/focus."
+    troubleshooting: "If desktop session fails, use the 'testNow' app on a smartphone to start the session."
+
+bug_submission:
+  button: "Located in the bottom left corner."
+  pre_requisites: "Verify bug is not in 'Known Bugs' or already submitted by another tester."
+
+post_campaign_transition:
+  path: "After a campaign ends, transition to the regular Community."
+  requirements: "Pass the 'Exploratory Course' (Onboarding) to become an approved tester."
+  benefits: "Unlock all regular test cycles, Bug Fix Confirmations, and Bug Report Confirmations."
