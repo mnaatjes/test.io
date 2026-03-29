@@ -1,0 +1,12 @@
+{
+  "directory": "state",
+  "last_sync": "2026-03-29T20:49:22.181586",
+  "files": [
+    {
+      "id": "academy",
+      "path": ".agents/state/state.academy.yml",
+      "locked": false,
+      "size": 508
+    }
+  ]
+}

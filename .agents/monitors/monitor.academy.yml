@@ -1,0 +1,11 @@
+id: "monitor.academy"
+version: "1.0.0"
+status: "active"
+scope: "academy"
+watch_path: "academy/notes/"
+event_types: ["on_create", "on_modify"]
+target_generator: "generator.notes"
+lock_check: ".agents/state/state.academy.yml"
+debounce_ms: 1000
+action: "./bin/tio g notes"
+locked: false

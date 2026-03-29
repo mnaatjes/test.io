@@ -1,0 +1,22 @@
+{
+  "topic": "bug_reporting",
+  "last_processed": "2024-03-29T20:34:00Z",
+  "entities": [
+    {
+      "name": "Title Formula",
+      "pattern": "What? + Where? + When?",
+      "rules": ["Avoid 'does not work'", "Use positive description", "Precise conditions"]
+    },
+    {
+      "name": "Steps structure",
+      "rules": ["First: access URL/App", "Last: trigger action", "Minimum steps"]
+    }
+  ],
+  "constraints": [
+    "Never use 'does not work' in titles",
+    "Never use 'Observe' as the last step",
+    "Never use placeholders like 'will edit later'",
+    "Always use realistic inputs for data"
+  ],
+  "metadata_tags": ["qa-standard", "test-io", "reporting"]
+}

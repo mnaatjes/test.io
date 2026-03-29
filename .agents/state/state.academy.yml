@@ -1,0 +1,18 @@
+id: "state.academy"
+version: "1.0.1"
+locked: false
+last_sync: "2024-03-29T20:35:00Z"
+status: "updated"
+module_context: "academy-progress"
+directives:
+  - "Rule 1: Never overwrite state if 'locked: true'."
+  - "Rule 2: Sync manifest after every successful state update."
+progress:
+  onboarding: "completed"
+  bugs: "in-progress"
+  academy_notes_count: 1
+  processed_topics:
+    - "bug_reporting"
+  notes_files:
+    - "academy/notes/notes_bug_reporting.md"
+    - "academy/notes/notes_bug_reporting.agent.json"

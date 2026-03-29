@@ -1,0 +1,16 @@
+quick_reference:
+  topic: "Academy Onboarding"
+  source_module: "academy/onboarding/general.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Always use positive descriptions in titles (What IS happening)."
+    - "-> ACTION: Select the correct Feature and Severity BEFORE filling the report."
+    - "X  AVOID: Do not use numbering in steps; the system does it automatically."
+    - "-> ACTION: Minimum steps necessary for reproduction."
+    - "X  AVOID: Never use 'Observe' as the last step."
+
+  final_validation:
+    - "Title formula: What? + Where? + When?"
+    - "Actual Result is NOT the simple opposite of Expected Result?"
+    - "Environment matches your profile device list?"

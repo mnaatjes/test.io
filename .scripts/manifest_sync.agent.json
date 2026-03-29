@@ -1,0 +1,7 @@
+{
+  "script_id": "manifest-sync-v1",
+  "language": "python3",
+  "dependencies": ["PyYAML", "pathlib"],
+  "environment": "Debian 13 / i3wm",
+  "behavior_summary": "Deterministic manifest synchronization for .agents/ directories. Handles YAML parsing, lock checks, and JSON output."
+}
