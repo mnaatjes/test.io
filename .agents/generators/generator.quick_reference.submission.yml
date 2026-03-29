@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Test Cycle and Submission"
+  source_module: "academy/tmp/test_process_and_submission.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Read ALL instructions and feature descriptions before starting."
+    - "-> ACTION: Confirm participation AND select the device to enable bug submission."
+    - "X  AVOID: Do not use browser AddOn translators (content must remain in original language)."
+    - "-> ACTION: Start a 'Test Session' once the cycle begins."
+    - "!! CRITICAL: Respond to info requests from TL/Customer even AFTER the cycle ends."
+
+  final_validation:
+    - "Have you confirmed participation and selected a device?"
+    - "Is the test session active?"
+    - "Are you using the original language (no AddOn translation)?"
+    - "Check emails for post-cycle info requests?"

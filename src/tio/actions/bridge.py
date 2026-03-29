@@ -9,37 +9,33 @@ class GeminiBridge:
         self.tio = orchestrator
 
     def dispatch_generator(self, module_name):
-        """Prepares a directive for Gemini CLI based on a YAML generator."""
-        if not module_name:
-            self.tio.log("Error: Module name required for generation.", "red")
-            return
-
         yml_path = self.tio.get_agent_path("generators", module_name, prefix="generator")
-        
         if not yml_path:
             self.tio.log(f"Error: Generator for '{module_name}' not found.", "red")
             return
 
         with open(yml_path, 'r') as f:
-            generator_data = yaml.safe_load(f)
+            data = yaml.safe_load(f)
 
-        # The BRIDGE logic:
-        # We output a structured directive that the Gemini CLI will recognize
-        # If we're in 'raw' mode, we output just the instruction.
-        # Otherwise, we wrap it for the user.
-        
-        directive_content = generator_data.get('generator', {}).get('description', 'No description found.')
-        
-        self.tio.log(f"Bridging to Gemini CLI for module: [bold]{module_name}[/bold]")
-        
-        # This is the "Magic String" that triggers you:
-        instruction = (
-            f"\n[DIRECTIVE: {module_name}]\n"
-            f"Based on the following generator configuration:\n"
-            f"{yaml.dump(generator_data)}\n"
-            f"Please execute the 'state_generation' or 'manifest_sync' as defined."
-        )
-        
-        # In a real shell, we might use `os.system(f"gemini '{instruction}'")`
-        # But here, we print it so the user sees what the CLI is telling the AI.
-        print(instruction)
+        print(f"\n[DIRECTIVE: {module_name}]\n{yaml.dump(data)}\n")
+
+    def dispatch_quiz_question(self, question, context_files, quiz_id):
+        """Directive for Gemini to answer a quiz question using context."""
+        directive = {
+            "action": "quiz_answer",
+            "quiz_id": quiz_id,
+            "question": question,
+            "context_files": context_files,
+            "instruction": "Search the context_files for the best answer. Provide the answer and a short reasoning. Format and store the question/answer in a YML file in academy/quizzes/questions/."
+        }
+        print(f"\n[DIRECTIVE: QUIZ_QUESTION]\n{yaml.dump(directive)}\n")
+
+    def dispatch_quiz_end(self, state, reason):
+        """Directive for Gemini to finalize the quiz and write the report."""
+        directive = {
+            "action": "quiz_finalize",
+            "state": state,
+            "reason": reason,
+            "instruction": "Prompt the user for the quiz outcome (score, pass/fail). Store a Markdown report in academy/quizzes/notes/ with the quiz questions, correct answers, and final score. Ensure the filename is timestamped."
+        }
+        print(f"\n[DIRECTIVE: QUIZ_END]\n{yaml.dump(directive)}\n")

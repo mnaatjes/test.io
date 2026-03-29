@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Visual Bugs (GUI)"
+  source_module: "academy/tmp/visual_bugs.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Submit repetetive visual issues ONLY ONCE in a single report."
+    - "-> ACTION: Report as Functional ONLY if the bug prevents intuitive functionality."
+    - "X  AVOID: Do not submit individual reports for the same scaling/overlap issue across pages."
+    - "-> ACTION: Always include screenshots; use screencasts if an action triggers the issue."
+    - "!! CRITICAL: Focus on misalignments, overlaps, and responsive design cuts."
+
+  final_validation:
+    - "Is this the only report for this specific repetitive visual issue?"
+    - "Does the report state that other instances/pages are also affected?"
+    - "If it's marked Functional, is there truly no intuitive workaround?"
+    - "Are screenshots attached and clear?"

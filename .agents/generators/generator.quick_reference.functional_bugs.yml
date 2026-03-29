@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Functional Bugs Assessment"
+  source_module: "academy/tmp/functional_bugs_assessment.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: A CRITICAL bug is a Showstopper for a core process (e.g., checkout)."
+    - "-> ACTION: Select HIGH if non-trivial functionality is broken with NO workaround."
+    - "X  AVOID: Do not report 'forced bugs' (random clicking, multi-tapping) as valid."
+    - "-> ACTION: Report 'Edge Cases' (uncommon actions) as LOW severity."
+    - "!! CRITICAL: If a visual/content issue blocks functionality, report as FUNCTIONAL."
+
+  final_validation:
+    - "Is this a broken feature, or just intentional design/suggestion?"
+    - "Does a workaround exist? (If yes, it's likely not Critical)."
+    - "Is the severity (Low/High/Critical) consistent with other approved reports?"
+    - "Are you testing on an official/supported OS version?"

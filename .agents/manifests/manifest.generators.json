@@ -1,6 +1,6 @@
 {
   "directory": "generators",
-  "last_sync": "2026-03-29T20:49:22.152338",
+  "last_sync": "2026-03-29T21:14:43.709282",
   "files": [
     {
       "id": "monitors",
@@ -13,6 +13,18 @@
       "path": ".agents/generators/generator.quick_reference.yml",
       "locked": false,
       "size": 763
+    },
+    {
+      "id": "academy",
+      "path": ".agents/generators/generator.quick_reference.academy.yml",
+      "locked": false,
+      "size": 703
+    },
+    {
+      "id": "submission",
+      "path": ".agents/generators/generator.quick_reference.submission.yml",
+      "locked": false,
+      "size": 830
     },
     {
       "id": "state",
@@ -33,6 +45,12 @@
       "size": 1907
     },
     {
+      "id": "functional_bugs",
+      "path": ".agents/generators/generator.quick_reference.functional_bugs.yml",
+      "locked": false,
+      "size": 905
+    },
+    {
       "id": "notes",
       "path": ".agents/generators/generator.notes.yml",
       "locked": false,
@@ -49,6 +67,12 @@
       "path": ".agents/generators/generator.manifests.yml",
       "locked": false,
       "size": 2377
+    },
+    {
+      "id": "visual_bugs",
+      "path": ".agents/generators/generator.quick_reference.visual_bugs.yml",
+      "locked": false,
+      "size": 881
     }
   ]
 }

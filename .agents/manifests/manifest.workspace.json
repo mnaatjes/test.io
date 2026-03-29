@@ -1,7 +1,7 @@
 {
   "type": "project-snapshot",
-  "last_sync": "2026-03-29T20:49:22.451871",
-  "file_count": 56,
+  "last_sync": "2026-03-29T21:14:43.991599",
+  "file_count": 76,
   "files": [
     {
       "name": ".gitignore",
@@ -104,15 +104,15 @@
     {
       "name": "cli.py",
       "rel_path": "src/tio/cli.py",
-      "size": 1255,
-      "mtime": 1774816960.5610845,
+      "size": 1759,
+      "mtime": 1774817977.8936107,
       "ext": ".py"
     },
     {
       "name": "core.py",
       "rel_path": "src/tio/core.py",
-      "size": 5596,
-      "mtime": 1774816992.1382823,
+      "size": 4585,
+      "mtime": 1774817986.402653,
       "ext": ".py"
     },
     {
@@ -120,6 +120,20 @@
       "rel_path": "src/tio/actions/bridge.py",
       "size": 1735,
       "mtime": 1774815778.3967254,
+      "ext": ".py"
+    },
+    {
+      "name": "notes.py",
+      "rel_path": "src/tio/actions/notes.py",
+      "size": 3102,
+      "mtime": 1774817870.622075,
+      "ext": ".py"
+    },
+    {
+      "name": "monitor.py",
+      "rel_path": "src/tio/actions/monitor.py",
+      "size": 1774,
+      "mtime": 1774817992.1936817,
       "ext": ".py"
     },
     {
@@ -137,6 +151,20 @@
       "ext": ".py"
     },
     {
+      "name": "state.py",
+      "rel_path": "src/tio/actions/state.py",
+      "size": 1689,
+      "mtime": 1774817928.001362,
+      "ext": ".py"
+    },
+    {
+      "name": "quick_ref.py",
+      "rel_path": "src/tio/actions/quick_ref.py",
+      "size": 2058,
+      "mtime": 1774817504.9121952,
+      "ext": ".py"
+    },
+    {
       "name": "env.manager_venv.yml",
       "rel_path": ".agents/environment/env.manager_venv.yml",
       "size": 1696,
@@ -146,8 +174,8 @@
     {
       "name": "monitor.academy.yml",
       "rel_path": ".agents/monitors/monitor.academy.yml",
-      "size": 284,
-      "mtime": 1774816347.1395807,
+      "size": 265,
+      "mtime": 1774817996.478703,
       "ext": ".yml"
     },
     {
@@ -160,36 +188,36 @@
     {
       "name": "manifest.workspace.json",
       "rel_path": ".agents/manifests/manifest.workspace.json",
-      "size": 9640,
-      "mtime": 1774816615.0558317,
+      "size": 11244,
+      "mtime": 1774817749.311462,
       "ext": ".json"
     },
     {
       "name": "manifest.state.json",
       "rel_path": ".agents/manifests/manifest.state.json",
       "size": 214,
-      "mtime": 1774817362.181428,
+      "mtime": 1774818883.7328992,
       "ext": ".json"
     },
     {
       "name": "manifest.templates.json",
       "rel_path": ".agents/manifests/manifest.templates.json",
       "size": 90,
-      "mtime": 1774817362.182428,
+      "mtime": 1774818883.7328992,
       "ext": ".json"
     },
     {
       "name": "manifest.generators.json",
       "rel_path": ".agents/manifests/manifest.generators.json",
-      "size": 1216,
-      "mtime": 1774817362.178428,
+      "size": 1850,
+      "mtime": 1774818883.7298992,
       "ext": ".json"
     },
     {
       "name": "manifest.monitors.json",
       "rel_path": ".agents/manifests/manifest.monitors.json",
       "size": 222,
-      "mtime": 1774817362.1794279,
+      "mtime": 1774818883.730899,
       "ext": ".json"
     },
     {
@@ -204,6 +232,20 @@
       "rel_path": ".agents/generators/generator.quick_reference.yml",
       "size": 763,
       "mtime": 1774810248.625736,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.academy.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.academy.yml",
+      "size": 703,
+      "mtime": 1774817494.123138,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.submission.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.submission.yml",
+      "size": 830,
+      "mtime": 1774817744.370437,
       "ext": ".yml"
     },
     {
@@ -228,6 +270,13 @@
       "ext": ".yml"
     },
     {
+      "name": "generator.quick_reference.functional_bugs.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.functional_bugs.yml",
+      "size": 905,
+      "mtime": 1774817739.0674098,
+      "ext": ".yml"
+    },
+    {
       "name": "generator.notes.yml",
       "rel_path": ".agents/generators/generator.notes.yml",
       "size": 1588,
@@ -246,6 +295,13 @@
       "rel_path": ".agents/generators/generator.manifests.yml",
       "size": 2377,
       "mtime": 1774812646.5459375,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.visual_bugs.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.visual_bugs.yml",
+      "size": 881,
+      "mtime": 1774817730.4063656,
       "ext": ".yml"
     },
     {
@@ -284,6 +340,41 @@
       "ext": ".yml"
     },
     {
+      "name": "notes_failed_test_case_steps.md",
+      "rel_path": "academy/notes/notes_failed_test_case_steps.md",
+      "size": 1597,
+      "mtime": 1774817877.404109,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_bug_report_standards.md",
+      "rel_path": "academy/notes/notes_bug_report_standards.md",
+      "size": 2921,
+      "mtime": 1774817877.4331093,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_quick_start_guide.md",
+      "rel_path": "academy/notes/notes_quick_start_guide.md",
+      "size": 1974,
+      "mtime": 1774817877.411109,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_test_process_and_submission.md",
+      "rel_path": "academy/notes/notes_test_process_and_submission.md",
+      "size": 2042,
+      "mtime": 1774817877.4401093,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_user_profile_snapshot.md",
+      "rel_path": "academy/notes/notes_user_profile_snapshot.md",
+      "size": 553,
+      "mtime": 1774817877.407109,
+      "ext": ".md"
+    },
+    {
       "name": "notes_bug_reporting.agent.json",
       "rel_path": "academy/notes/notes_bug_reporting.agent.json",
       "size": 668,
@@ -291,10 +382,59 @@
       "ext": ".json"
     },
     {
+      "name": "notes_discord_community.md",
+      "rel_path": "academy/notes/notes_discord_community.md",
+      "size": 1509,
+      "mtime": 1774817877.4221091,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_utest_vs_testio.md",
+      "rel_path": "academy/notes/notes_utest_vs_testio.md",
+      "size": 2764,
+      "mtime": 1774817877.419109,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_visual_bugs.md",
+      "rel_path": "academy/notes/notes_visual_bugs.md",
+      "size": 1879,
+      "mtime": 1774817877.429109,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_functional_bugs_assessment.md",
+      "rel_path": "academy/notes/notes_functional_bugs_assessment.md",
+      "size": 2481,
+      "mtime": 1774818880.4218683,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_specialized_campaigns.md",
+      "rel_path": "academy/notes/notes_specialized_campaigns.md",
+      "size": 1703,
+      "mtime": 1774817877.4251091,
+      "ext": ".md"
+    },
+    {
       "name": "notes_bug_reporting.md",
       "rel_path": "academy/notes/notes_bug_reporting.md",
       "size": 1546,
       "mtime": 1774816423.1409392,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_content_bugs.md",
+      "rel_path": "academy/notes/notes_content_bugs.md",
+      "size": 2278,
+      "mtime": 1774818876.3048296,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_bug_status_meanings.md",
+      "rel_path": "academy/notes/notes_bug_status_meanings.md",
+      "size": 1967,
+      "mtime": 1774817877.4371092,
       "ext": ".md"
     },
     {
