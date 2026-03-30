@@ -1,0 +1,36 @@
+topic: Bug Reproductions
+summary: Learn about positive/negative reproductions, attachment rules, and session management.
+author: Markus
+updated: over a year ago
+definition:
+  purpose: Indicate concerned environments and device-specificity to help customers assess severity.
+  types:
+    positive: Reproducing the same bug using the same steps.
+    negative: Showing the function works on your device (no bug found).
+  rule_different_bug: If you find a different bug, submit a new report instead of a reproduction.
+reproduction_session:
+  duration: 30 minutes to submit after clicking "Start reproduction".
+  reservation: Seat is held during the session; expires and opens if not submitted in time.
+attachment_rules:
+  screencast:
+    requirement: Mandatory for all reproductions.
+    duration: Max 15 seconds (rare exceptions up to original tester's length).
+    visibility: Must show current date and URL bar (for websites).
+  app_crashes:
+    requirement: Crash log + screencast (coherent timings).
+  compliance: Must follow all Bug Report Attachment rules; failure leads to rejection.
+  warning: Reproducing Out-of-Scope (OOS) bugs (e.g., live orders) results in warning + rejection.
+concurrency_limit:
+  rule: Only one active task at a time.
+  incompatible_tasks:
+    - Test Case execution
+    - Test Session
+    - Bug Reproduction Execution
+    - Bug Fix Confirmation
+    - Bug Report Confirmation
+visibility_criteria:
+  conditions:
+    - Test is currently running.
+    - Report is for a functional bug.
+    - Report hasn't been reviewed by the customer.
+    - Max reproduction count hasn't been reached (plan-dependent).

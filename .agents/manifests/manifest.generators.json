@@ -1,7 +1,13 @@
 {
   "directory": "generators",
-  "last_sync": "2026-03-29T21:14:43.709282",
+  "last_sync": "2026-03-30T13:08:00.580220",
   "files": [
+    {
+      "id": "screenshots",
+      "path": ".agents/generators/generator.quick_reference.screenshots.yml",
+      "locked": false,
+      "size": 757
+    },
     {
       "id": "monitors",
       "path": ".agents/generators/generator.monitors.yml",
@@ -15,6 +21,36 @@
       "size": 763
     },
     {
+      "id": "functional_bugs_assessment",
+      "path": ".agents/generators/generator.quick_reference.functional_bugs_assessment.yml",
+      "locked": false,
+      "size": 1152
+    },
+    {
+      "id": "bug_attachments",
+      "path": ".agents/generators/generator.quick_reference.bug_attachments.yml",
+      "locked": false,
+      "size": 765
+    },
+    {
+      "id": "what_is_phishing",
+      "path": ".agents/generators/generator.quick_reference.what_is_phishing.yml",
+      "locked": false,
+      "size": 972
+    },
+    {
+      "id": "bug_report_standards",
+      "path": ".agents/generators/generator.quick_reference.bug_report_standards.yml",
+      "locked": false,
+      "size": 976
+    },
+    {
+      "id": "social_engineering_techniques",
+      "path": ".agents/generators/generator.quick_reference.social_engineering_techniques.yml",
+      "locked": false,
+      "size": 1035
+    },
+    {
       "id": "academy",
       "path": ".agents/generators/generator.quick_reference.academy.yml",
       "locked": false,
@@ -25,6 +61,18 @@
       "path": ".agents/generators/generator.quick_reference.submission.yml",
       "locked": false,
       "size": 830
+    },
+    {
+      "id": "data_privacy",
+      "path": ".agents/generators/generator.quick_reference.data_privacy.yml",
+      "locked": false,
+      "size": 921
+    },
+    {
+      "id": "screencasts",
+      "path": ".agents/generators/generator.quick_reference.screencasts.yml",
+      "locked": false,
+      "size": 778
     },
     {
       "id": "state",
@@ -45,10 +93,34 @@
       "size": 1907
     },
     {
+      "id": "bug_reproductions",
+      "path": ".agents/generators/generator.quick_reference.bug_reproductions.yml",
+      "locked": false,
+      "size": 828
+    },
+    {
+      "id": "reproduction_feature",
+      "path": ".agents/generators/generator.quick_reference.reproduction_feature.yml",
+      "locked": false,
+      "size": 643
+    },
+    {
       "id": "functional_bugs",
       "path": ".agents/generators/generator.quick_reference.functional_bugs.yml",
       "locked": false,
       "size": 905
+    },
+    {
+      "id": "cybersecurity",
+      "path": ".agents/generators/generator.quick_reference.cybersecurity.yml",
+      "locked": false,
+      "size": 1221
+    },
+    {
+      "id": "content_bugs",
+      "path": ".agents/generators/generator.quick_reference.content_bugs.yml",
+      "locked": false,
+      "size": 916
     },
     {
       "id": "notes",
@@ -63,6 +135,12 @@
       "size": 1827
     },
     {
+      "id": "dos_and_donts_protecting_testing_devices",
+      "path": ".agents/generators/generator.quick_reference.dos_and_donts_protecting_testing_devices.yml",
+      "locked": false,
+      "size": 1506
+    },
+    {
       "id": "manifests",
       "path": ".agents/generators/generator.manifests.yml",
       "locked": false,
@@ -72,7 +150,13 @@
       "id": "visual_bugs",
       "path": ".agents/generators/generator.quick_reference.visual_bugs.yml",
       "locked": false,
-      "size": 881
+      "size": 986
+    },
+    {
+      "id": "how_to_keep_your_device_safe_for_testing",
+      "path": ".agents/generators/generator.quick_reference.how_to_keep_your_device_safe_for_testing.yml",
+      "locked": false,
+      "size": 1352
     }
   ]
 }

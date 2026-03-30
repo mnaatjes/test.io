@@ -1,0 +1,24 @@
+id: quick_reference.content_bugs
+name: Content Bugs Quick Reference
+description: Reporting standards for text, media, and data defects.
+content:
+  definition: Defects in actual website/app content (text, images, icons, links).
+  examples:
+    - Broken links/images (404s).
+    - Missing translations or tooltips.
+    - Defective redirections.
+    - Inconsistent data/products.
+  repetition_rule:
+    policy: Submit ONLY ONCE.
+    rejection: Individual reports for every occurrence will be rejected.
+  functional_upgrade:
+    criteria: Upgrade if it PREVENTS functionality.
+    nav_components: Linking issues in menu/header/footer/breadcrumbs are typically LOW functional bugs.
+  documentation:
+    screenshots: Mandatory.
+  out_of_scope:
+    - Spelling/typo problems.
+    - Dummy text on staging environments.
+  images:
+    broken: Error icons/blank space (Bug).
+    placeholder: Geometric shapes/icons (Not a Bug).

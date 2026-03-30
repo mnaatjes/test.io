@@ -1,0 +1,37 @@
+title: "Screencasts"
+author: "Markus"
+updated: "Over a month ago"
+
+technical_specs:
+  format: ".mp4 (convert .mov to .mp4 on iOS)"
+  codec: "H.264 preferred"
+  max_size: "25MB"
+  time_limits:
+    bug_reports: "60 seconds (max)"
+    reproductions: "15 seconds (max)"
+    user_stories: "15 seconds (max)"
+
+best_practices:
+  preparation: "Set up the app/website BEFORE starting (e.g., fill forms first)."
+  recording:
+    - "Turn off audio to avoid background noise."
+    - "Show clicks/taps (Mandatory for Android and Desktop)."
+    - "Avoid hovering over elements too long."
+    - "Record in one go (no cuts/pauses in the middle)."
+  editing:
+    - "Only cut the beginning or end if too long."
+    - "NO speed increases allowed."
+    - "Blurring allowed ONLY for PII (Private Information)."
+
+suggested_tools:
+  desktop:
+    - "ScreenPal (Win/Mac): Free has watermark, mouse effects."
+    - "Bandicam (Win): Mouse effects, watermark."
+    - "macOS Built-in: No watermark, rename to .mp4."
+  mobile:
+    - "iOS/Android Built-in: Good quality, no 3rd party needed."
+    - "AZ Screen Recorder (Android): Wireless file access."
+    - "Mobizen (Android): ad-supported free version."
+
+validation:
+  requirement: "Always watch your own screencast after upload to check for corruption."

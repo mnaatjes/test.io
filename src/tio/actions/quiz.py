@@ -23,6 +23,8 @@ class QuizManager:
             return yaml.safe_load(f)
 
     def _save_state(self, state):
+        # Create directory if missing
+        self.state_file.parent.mkdir(parents=True, exist_ok=True)
         with open(self.state_file, 'w') as f:
             yaml.dump(state, f)
 
@@ -39,7 +41,7 @@ class QuizManager:
         self.tio.log(f"Started new quiz: [bold]{state['quiz_id']}[/bold]", "green")
 
     def end(self, reason="completed"):
-        """Ends the quiz session and prompts for the outcome."""
+        """Ends the quiz session and triggers final report/log generation."""
         state = self._load_state()
         if not state.get('active'):
             self.tio.log("Error: No active quiz session to end.", "red")
@@ -49,21 +51,29 @@ class QuizManager:
         state['end_time'] = datetime.now().isoformat()
         self._save_state(state)
 
-        # This triggers a Bridge call so Gemini can ask for the outcome and write the report
+        # Trigger the Bridge for Gemini to synthesize the FINAL log and report
         from .bridge import GeminiBridge
         bridge = GeminiBridge(self.tio)
         bridge.dispatch_quiz_end(state, reason)
 
     def answer(self, question_text):
-        """Prepares a directive for Gemini to answer the question using notes/refs."""
+        """Adds question to state and triggers Bridge for AI answer."""
         state = self._load_state()
         if not state.get('active'):
             self.tio.log("Warning: No active quiz session. Starting one now...", "yellow")
             self.start()
             state = self._load_state()
 
-        # Build the context: Find all relevant notes and refs
-        # We'll use the discovery manifest for this
+        # Append question to state "memory"
+        state['questions'].append({
+            "timestamp": datetime.now().isoformat(),
+            "question": question_text,
+            "answer": None,
+            "reasoning": None
+        })
+        self._save_state(state)
+
+        # Build context from discovery manifest
         manifest_path = self.root / ".agents/manifests/manifest.workspace.json"
         context_files = []
         if manifest_path.exists():
@@ -74,7 +84,6 @@ class QuizManager:
                     if path.startswith("academy/notes/") or "generator.quick_reference" in path:
                         context_files.append(path)
 
-        # Trigger the Bridge
         from .bridge import GeminiBridge
         bridge = GeminiBridge(self.tio)
         bridge.dispatch_quiz_question(question_text, context_files, state['quiz_id'])

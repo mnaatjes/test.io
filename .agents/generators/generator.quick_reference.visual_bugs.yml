@@ -1,17 +1,25 @@
-quick_reference:
-  topic: "Visual Bugs (GUI)"
-  source_module: "academy/tmp/visual_bugs.yml"
-  last_updated: "2026-03-29"
-
-  cli_summary:
-    - "!! CRITICAL: Submit repetetive visual issues ONLY ONCE in a single report."
-    - "-> ACTION: Report as Functional ONLY if the bug prevents intuitive functionality."
-    - "X  AVOID: Do not submit individual reports for the same scaling/overlap issue across pages."
-    - "-> ACTION: Always include screenshots; use screencasts if an action triggers the issue."
-    - "!! CRITICAL: Focus on misalignments, overlaps, and responsive design cuts."
-
-  final_validation:
-    - "Is this the only report for this specific repetitive visual issue?"
-    - "Does the report state that other instances/pages are also affected?"
-    - "If it's marked Functional, is there truly no intuitive workaround?"
-    - "Are screenshots attached and clear?"
+id: quick_reference.visual_bugs
+name: Visual Bugs Quick Reference
+description: Standards for identifying and reporting visual interface issues.
+content:
+  definition: Issues with graphical user interfaces (GUI) fixable via HTML/CSS.
+  examples:
+    - Layout framework problems (misalignment).
+    - Responsive design issues (mobile vs. desktop display).
+    - Overlapping or cut-off text/elements.
+  repetition_rule:
+    policy: Submit ONLY ONCE.
+    requirement: Mention other affected URLs/pages in the single report.
+  functional_upgrade:
+    criteria: Upgrade if it PREVENTS functionality.
+    exception: Stay visual if an easy/intuitive alternative path exists.
+  documentation:
+    screenshots: Always required.
+    screencasts: Required if an action triggers the issue.
+  responsive_checks:
+    - Inconsistent scaling.
+    - Illegible text.
+    - Tap targets too small.
+    - Unintended horizontal scrolling.
+  tools:
+    - Google Chrome Lighthouse (evaluates mobile usability).

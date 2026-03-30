@@ -1,0 +1,36 @@
+id: quick_reference.dos_and_donts_protecting_testing_devices
+name: DOs and DON'Ts Quick Reference
+description: Best practices and prohibited activities for safeguarding testing devices.
+content:
+  protection_steps:
+    physical_and_digital:
+      - Keep devices secure (USB, laptops).
+      - Lock computer when leaving, even briefly.
+      - Use strong, complex passwords.
+      - Encrypt confidential files.
+      - Protect laptop when traveling (not in car/luggage).
+    incident_response:
+      - Report lost/stolen devices; change login password.
+      - If infected: Close programs, shut down, take to maintenance.
+  dos:
+    - Set strong passwords.
+    - Lock devices when not in use.
+    - Keep software (OS and browser) up-to-date.
+    - Restrict access to your computer.
+    - Be cautious online.
+  donts:
+    - Share passwords or sensitive info.
+    - Leave devices unattended.
+    - Use outdated or unsupported software.
+    - Allow others access to your computer.
+    - Open suspicious emails or unfamiliar attachments/links.
+  prohibited_activities:
+    - Unauthorized P2P/torrent clients.
+    - Unauthorized copyright sharing.
+    - Pornography software or websites.
+    - Key generators, cracking tools, or Wi-Fi hacking tools.
+    - Anonymizers or software bypassing monitoring.
+    - Outdated/unsupported (vulnerable) software.
+    - Non-standard encryption tools.
+    - Cryptocurrency mining or using company resources for profit.
+    - Hacking software for infrastructure/applications.

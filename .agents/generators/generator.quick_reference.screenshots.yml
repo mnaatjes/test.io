@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Screenshots Guide"
+  source_module: "academy/tmp/screenshots_guide.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Screenshots are for STATIC bugs (Visual/Content) only."
+    - "-> ACTION: Always include the URL field for website tests."
+    - "X  AVOID: Do not use screenshots for functional bugs; a video is needed."
+    - "-> ACTION: Highlight the bug directly on the screenshot using markup/drawing tools."
+    - "!! CRITICAL: iOS/Android: Use Power + Vol Down (Newer) or Home + Power (Older)."
+
+  final_validation:
+    - "Is the URL visible?"
+    - "Is the bug clearly highlighted/circled?"
+    - "Is it in JPG or PNG format?"
+    - "Is this truly a static bug? (If it's an action, go record a video)."

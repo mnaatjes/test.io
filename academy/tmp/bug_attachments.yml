@@ -1,0 +1,49 @@
+title: "Bug Report Attachments"
+author: "Markus"
+updated: "Over a month ago"
+
+core_policy:
+  requirement: "Each bug must have at least one attachment as evidence."
+  purpose: "Proof of occurrence on specific device/OS/browser; does NOT replace written info."
+
+selection_rules:
+  screencast_required:
+    - "Functional bugs (always required to show action/process)."
+    - "Whenever an action triggers a bug."
+    - "To illustrate a process (static images cannot show root cause)."
+  screenshot_sufficient:
+    - "Static bugs (Visual or Content issues)."
+    - "Static GUI problems."
+
+general_requirements:
+  freshness: "New attachments required for every report/reproduction; NO copying."
+  language: "All relevant info (date, time, system info, errors) must be in English (or German if specified)."
+  device_sync: "Report only ONE device; upload only one attachment for it."
+  privacy:
+    - "Do not show other Test IO customers' data (tab names, emails)."
+    - "Do not show personal info (private photos, bad word autocorrect)."
+  technical:
+    - "URL field must be visible for website tests."
+    - "Resolution must be high enough to read text."
+    - "Record the WHOLE screen."
+    - "Crash logs are MANDATORY for app crashes (must match video timing)."
+
+date_time_rules:
+  visibility: "Current date and time must be visible."
+  mobile_specific: "If using a screenshot on mobile, a second screenshot showing date/time is required (battery/time must match)."
+  format: "24-hour clock preferred; 12-hour must use AM/PM."
+  location_tips:
+    windows: "Taskbar or calendar."
+    mac: "Calendar icon or menu bar."
+    mobile: "Swipe down notification center at start of recording."
+
+formatting:
+  screenshots: ["JPG", "PNG", "Highlight the bug"]
+  screencasts: ["MP4", "Max 25MB", "Max 60s for Bug Reports", "Max 15s for Reproductions"]
+
+streaming_devices:
+  requirements:
+    - "Record WHOLE TV screen."
+    - "TV Remote must be visible and clear."
+    - "No dark ambient light."
+    - "No background noise (conversations, TV, pets)."

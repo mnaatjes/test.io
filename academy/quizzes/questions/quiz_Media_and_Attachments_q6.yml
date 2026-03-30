@@ -1,0 +1,9 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 6
+timestamp: "2026-03-29T21:26:00"
+question_text: "What is WRONG about the following screencast? *(2 correct answers)"
+provided_answer:
+  - "Clicks are not highlighted"
+  - "There is no date displayed"
+reasoning: "Academy notes list these as mandatory technical proofs: clicks/taps must be shown on Android/Desktop, and the system date/time must be visible to prove the media was created for the current test."
+status: "answered"

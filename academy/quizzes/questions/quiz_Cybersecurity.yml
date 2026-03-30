@@ -1,0 +1,133 @@
+active: false
+end_time: '2026-03-30T00:10:59.230028'
+questions:
+- answer: 1. To deceive internet users into disclosing personal and financial information.
+  question: 'Q1: What is the primary purpose of phishing scams?
+
+    1. To deceive internet users into disclosing personal and financial information.
+
+    2. To improve email marketing strategies.
+
+    3. To create stronger passwords for online accounts.'
+  reasoning: Based on 'What Is Phishing? Notes', phishing involves creating counterfeit
+    emails and websites to deceive users into disclosing personal data like social
+    security numbers and bank info.
+  timestamp: '2026-03-30T00:03:24.997955'
+- answer: 1. Responding to the email to ask for clarification.
+  question: 'Q2: What actions should you avoid when handling a suspicious email?
+
+    1. Responding to the email to ask for clarification.
+
+    2. Deleting the email after reporting it.
+
+    3. Reporting it using the "Report Phish" button in Outlook.'
+  reasoning: According to the "What Is Phishing? Notes", users must NOT respond to
+    or forward suspicious emails. Reporting via the "Report Phish" button and deleting
+    after reporting are standard DO actions.
+  timestamp: '2026-03-30T00:04:29.834850'
+- answer: 1. Avoiding the use of public Wi-Fi networks for sensitive activities.
+  question: 'Q3: Which action can help to protect your online accounts?
+
+    1. Avoiding the use of public Wi-Fi networks for sensitive activities.
+
+    2. Using the same password for all your accounts.
+
+    3. Disabling encryption on your devices.'
+  reasoning: The "How to keep your device safe for Testing" notes explicitly recommend
+    avoiding public Wi-Fi for sensitive activities and using a VPN if necessary. Using
+    the same password for all accounts and disabling encryption are unsafe practices.
+  timestamp: '2026-03-30T00:05:13.552038'
+- answer: 2. Setting up lock screen passwords or biometric authentication.
+  question: 'Q4: What is a recommended practice for securing your physical devices?
+
+    1. Disabling automatic backups to save storage space.
+
+    2. Setting up lock screen passwords or biometric authentication.
+
+    3. Leaving your device unattended in public places.'
+  reasoning: The "How to keep your device safe for Testing" and "DOs and DON'Ts" articles
+    emphasize setting up lock screen passwords/biometrics and NEVER leaving devices
+    unattended in public. Disabling backups is also discouraged as backups should
+    be automatic and regular.
+  timestamp: '2026-03-30T00:06:09.537855'
+- answer: 2. Using peer-to-peer (P2P) software without authorization.
+  question: 'Q5: Which of the following is a prohibited activity for a software tester?
+
+    1. Encrypting confidential files on your device.
+
+    2. Using peer-to-peer (P2P) software without authorization.
+
+    3. Locking your computer when not in use.'
+  reasoning: The "DOs and DON'Ts" article lists unauthorized P2P software (like torrent
+    clients) as a prohibited activity. Encrypting confidential files and locking your
+    computer are both recommended DO actions.
+  timestamp: '2026-03-30T00:06:47.901897'
+- answer: 3. Close all programs and shut down the system. Then, either consult a certified
+    professional for maintenance or use a trusted antivirus software to scan and remove
+    any malware.
+  question: 'Q6: What should you do if you suspect your computer is infected?
+
+    1. Attempt to fix the issue yourself without reporting it.
+
+    2. Continue using the computer and ignore the issue.
+
+    3. Close all programs and shut down the system. Then, either consult a certified
+    professional for maintenance or use a trusted antivirus software to scan and remove
+    any malware.'
+  reasoning: The "DOs and DON'Ts" article explicitly states that if you think your
+    computer is infected, you should close all programs, shut down the system, and
+    take it to a certified maintenance office. Option 3 is the most complete and correct
+    action.
+  timestamp: '2026-03-30T00:07:26.830226'
+- answer: 3. SQL injection attacks.
+  question: 'Q7: What is an example of an external threat that can compromise the
+    integrity of an organization''s data?
+
+    1. Bugs in automated test scripts.
+
+    2. Inadvertent mistakes by personnel.
+
+    3. SQL injection attacks.'
+  reasoning: The "Data Privacy" article classifies SQL injection as an external threat,
+    whereas inadvertent mistakes and bugs in test scripts are listed as insider (internal)
+    threats.
+  timestamp: '2026-03-30T00:08:22.693290'
+- answer: 3. Biometric data.
+  question: 'Q8: Which of the following is considered strictly confidential personal
+    data?
+
+    1. Marital status.
+
+    2. Name.
+
+    3. Biometric data.'
+  reasoning: In the "Data Privacy" article, Biometric data is explicitly listed as
+    'Strictly confidential personal data' (Sensitive PII), while Name and Marital
+    status are listed as 'Confidential personal data'.
+  timestamp: '2026-03-30T00:09:09.080910'
+- answer: 1. A non-technical kind of intrusion that relies on human interaction.
+  question: 'Q9: What is social engineering in the context of cybersecurity?
+
+    1. A non-technical kind of intrusion that relies on human interaction.
+
+    2. A method of scanning networks to identify vulnerabilities.
+
+    3. A type of malware that infects stored files.'
+  reasoning: As defined in the "Social Engineering Techniques" article, social engineering
+    is a non-technical intrusion that relies heavily on human interaction and tricking
+    people into bypassing security procedures.
+  timestamp: '2026-03-30T00:09:40.124456'
+- answer: 2. Weaknesses in a computer or network that leave it susceptible to exploitation.
+  question: 'Q10: What are vulnerabilities in the context of cybersecurity?
+
+    1. Strengths in a network that protect it from attacks.
+
+    2. Weaknesses in a computer or network that leave it susceptible to exploitation.
+
+    3. Security features that prevent unauthorized access.'
+  reasoning: In the "Social Engineering Techniques" article, vulnerabilities are defined
+    as weaknesses in a computer or network that leave it susceptible to potential
+    exploitation, such as unauthorized use or access.
+  timestamp: '2026-03-30T00:10:10.562127'
+quiz_id: quiz_Cybersecurity
+start_time: '2026-03-30T00:02:41.793339'

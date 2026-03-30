@@ -1,0 +1,20 @@
+id: quick_reference.bug_reproductions
+name: Bug Reproductions Quick Reference
+description: Quick rules for positive/negative reproductions and attachments.
+content:
+  definition: Verifying others' bug reports on your device.
+  types:
+    positive: Same bug, same steps.
+    negative: Function works correctly.
+    different_bug: Submit a NEW bug report (not a repro).
+  session:
+    time_limit: 30 minutes.
+    seat: Reserved while session is active.
+  attachments:
+    screencast: Required (Max 15s).
+    crash_log: Required for app crashes.
+    visibility: Current date + URL bar (websites).
+  prohibitions:
+    - No concurrent tasks (Test Case, Session, etc.).
+    - No repros for Out-of-Scope (OOS) bugs (results in warning).
+  visibility: "Start reproduction" button appears for unreviewed functional bugs in active tests.

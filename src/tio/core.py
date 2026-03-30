@@ -19,9 +19,13 @@ class TioOrchestrator:
         "s": ("state", "Manage module state and progress tracking"),
         "m": ("monitor", "Activate/Deactivate background monitors"),
         "sync": ("sync", "Synchronize all JSON manifests (Enhanced Discovery)"),
+        "update": ("update", "Update Gemini context by re-syncing manifests and reporting state"),
+        "init": ("update", "Initialize/Update the agent's workspace knowledge"),
         "d": ("discovery", "Ingest project structure/files (Token Efficient)"),
         "q": ("quick_ref", "Show ADHD-friendly cheat sheets and rules"),
+        "n": ("notes", "Synthesize data into Markdown notes"),
         "z": ("quiz", "Manage Academy quizzes and get AI-assisted answers"),
+        "i": ("intake", "Ingest raw academy content into structured YML files"),
         "l": ("list", "Show command registry table"),
         "h": ("help", "Display all available commands and what they do")
     }
@@ -29,8 +33,8 @@ class TioOrchestrator:
     VERBOSE_HELP = {
         "z": {
             "title": "Quiz Action (z / quiz)",
-            "details": "Manages Academy quizzes. Use --start to begin, input questions for AI help, and --eoq to finish.",
-            "params": "<question_text> or flags (--start, --eoq)",
+            "details": "Manages Academy quizzes. Use --start to begin, input questions for AI help, and --end to finish.",
+            "params": "<question_text> or flags (--start, --end)",
             "yaml_interaction": "Uses .agents/state/state.quiz.yml and stores in academy/quizzes/",
             "example": "tio z --start 'Module 2'"
         },
@@ -40,6 +44,13 @@ class TioOrchestrator:
             "params": "<module_name> or '*' (all monitors)",
             "yaml_interaction": "Updates .agents/monitors/monitor.{module}.yml",
             "example": "tio m academy --stop"
+        },
+        "i": {
+            "title": "Intake Action (i / intake)",
+            "details": "Ingests raw academy content. Use --start to begin, input text for Gemini to structure, and --end to finalize and generate notes/quick-refs.",
+            "params": "<content_text> or flags (--start, --end)",
+            "yaml_interaction": "Uses .agents/state/state.intake.yml and stores in academy/tmp/",
+            "example": "tio i --start 'New Module'"
         }
     }
 
@@ -80,6 +91,11 @@ class TioOrchestrator:
             SyncManager(self).run()
             return
 
+        if cmd in ["update", "init"]:
+            from .actions.update import UpdateManager
+            UpdateManager(self).run()
+            return
+
         if cmd in ["q", "quick_ref"]:
             from .actions.quick_ref import QuickRefManager
             QuickRefManager(self).run(module)
@@ -88,12 +104,25 @@ class TioOrchestrator:
         if cmd in ["z", "quiz"]:
             from .actions.quiz import QuizManager
             manager = QuizManager(self)
-            if self.options.get("quiz_start"):
-                manager.start(self.options.get("quiz_start"))
-            elif self.options.get("quiz_end"):
+            if self.options.get("start"):
+                manager.start(self.options.get("start"))
+            
+            if self.options.get("end"):
                 manager.end()
-            else:
+            elif module:
                 manager.answer(module)
+            return
+
+        if cmd in ["i", "intake"]:
+            from .actions.intake import IntakeManager
+            manager = IntakeManager(self)
+            if self.options.get("start"):
+                manager.start(self.options.get("start"))
+            
+            if self.options.get("end"):
+                manager.end()
+            elif module:
+                manager.ingest(module)
             return
 
         if cmd in ["m", "monitor"]:

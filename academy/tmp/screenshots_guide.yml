@@ -1,0 +1,23 @@
+title: "Screenshots"
+author: "Markus"
+updated: "Over 6 months ago"
+
+core_rules:
+  usage: "Use for static bugs (Visual/Content). Functional bugs need video."
+  visibility: "URL field must be visible on website screenshots."
+  edit_rule: "Highlight the bug on the screenshot."
+
+tools_by_os:
+  windows: ["Snipping Tool", "Bandicam (Image Capture with drawing mode)"]
+  macos:
+    - "Full Screen: cmd + Shift + 3"
+    - "Section: cmd + Shift + 4"
+  android:
+    - "Home + Power (Older)"
+    - "Power + Volume Down (Newer)"
+    - "App: ScreenMaster"
+  ios_ipad:
+    - "Home + Power OR Side + Volume Up"
+    - "Use Markup tools to edit/highlight immediately."
+
+formats: ["JPG", "PNG"]

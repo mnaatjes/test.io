@@ -1,0 +1,7 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 4
+timestamp: "2026-03-29T21:21:00"
+question_text: "Is it true that if you add an attachment to the bug report, it can replace written information (e.g. Steps)"
+provided_answer: "False"
+reasoning: "Academy notes specify that attachments are visualization and proof only, and they do NOT replace the required written report data."
+status: "answered"

@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Screencast Best Practices"
+  source_module: "academy/tmp/screencasts_guide.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Max 60s for bug reports; max 15s for reproductions."
+    - "-> ACTION: Enable click/tap effects (Mandatory for Android and Desktop)."
+    - "X  AVOID: Turn off audio recording to prevent background noise."
+    - "-> ACTION: Record in one go (no mid-cuts, no pauses, no speed-up)."
+    - "!! CRITICAL: Always watch your own video after upload to check for corruption."
+
+  final_validation:
+    - "Is it under 60 seconds (Bug) or 15 seconds (Reproduction)?"
+    - "Is it in MP4 format?"
+    - "Are click/tap effects visible?"
+    - "Is the recording professional (no background noise, no legs/messy desks)?"

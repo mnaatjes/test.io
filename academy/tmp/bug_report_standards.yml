@@ -1,65 +1,58 @@
-title: "How to document a bug report properly and Test IO standards"
-author: "Markus"
-updated: "3 weeks ago"
-
-standards:
-  pre_requisites:
-    feature_selection: "Select the correct Feature first. If missing, mark all Feature descriptions as read on the test overview page."
-    severity: "For Functional bugs, Severity (Low, High, Critical) must be selected before filling the report."
-
-  title:
-    formula: "What? + Where? + When?"
-    rules:
-      - "Summarize the problem so it's understood without reading the full report."
-      - "Describe what IS happening, not what IS NOT happening (avoid 'does not work')."
-      - "Include specific conditions (e.g., specific user types or inputs)."
-      - "Reflect the real problem precisely."
-    examples:
-      bad: "Error shown on the Cart page"
-      good: "'Checkout' button from the Cart page navigates users to an 'Error 500' page"
-
-  url:
-    requirement: "Valid link copied directly from the browser where the bug occurs."
-
-  steps_to_reproduce:
-    structure:
-      first_step: "Indication to access the landing page URL or open the specific mobile app name."
-      middle_steps: "Separate actions (buttons pressed, links followed, data entered)."
-      last_step: "The specific action that triggers the bug (must NOT be 'Observe')."
-    rules:
-      - "Keep steps as general as possible unless the bug is specific to certain data."
-      - "Use the minimum number of steps necessary."
-      - "Do not number manually (system does it)."
-
-  actual_result:
-    rules:
-      - "Explain exactly what happened after the last step."
-      - "Be detailed and specific (e.g., name specific items not sorting correctly)."
-      - "Must NOT be the same as the Title."
-      - "Must NOT be the simple opposite of the Expected Result."
-    examples:
-      bad: "Error shown on the Cart page after clicking on the Checkout button."
-      good: "'Error 500 - Internal Server error' is shown after attempting to proceed to Checkout."
-
-  expected_result:
-    rules:
-      - "Describe the correct behavior if the bug did not exist."
-      - "Must be detailed (what page should load, what data should be saved)."
-      - "Must NOT be a minor variation or negative of the Actual Result."
-    examples:
-      bad: "User can proceed to the Checkout."
-      good: "User should be redirected to the Checkout page to add shipping/payment info and place an order."
-
-  environment:
-    rules:
-      - "Select the exact device/browser used from your invitation list."
-      - "Only one environment per report."
-      - "Mention other reproducible environments in the Actual Result if applicable."
-    warning: "Selecting the wrong environment or a device not in your profile will lead to rejection."
-
-  professionalism:
-    rules:
-      - "No placeholders (e.g., 'will edit later')."
-      - "Use realistic inputs (avoid 'asdf', 'test123')."
-      - "Typo corrections are the only valid reason for post-submission edits."
-      - "Delete mistakes only BEFORE Team Leader review."
+topic: Bug Report Requirements
+summary: Learn Test IO standards for documenting bug reports, including title formulas, step structures, and result descriptions.
+author: Markus
+updated: over 3 weeks ago
+pre_requisites:
+  feature_selection: Select the correct Feature first. If missing, mark all Feature descriptions as read on the test overview page.
+  severity: For Functional bugs, Severity (Low, High, Critical) must be selected before filling the report.
+title_standards:
+  formula: "What? + Where? + When?"
+  rules:
+    - Summarize the problem so it's understood without reading the full report.
+    - Describe what IS happening, not what IS NOT happening (avoid "does not work").
+    - Include specific conditions (e.g., specific user types or inputs).
+    - Reflect the real problem precisely.
+  examples:
+    bad: Error shown on the Cart page.
+    good: "\"Checkout\" button from the Cart page navigates users to an \"Error 500\" page."
+url_requirement: Valid link copied directly from the browser where the bug occurs.
+steps_to_reproduce:
+  structure:
+    first_step: Indication to access the landing page URL or open the specific mobile app name.
+    middle_steps: Separate actions (buttons pressed, links followed, data entered).
+    last_step: The specific action that triggers the bug (must NOT be "Observe").
+  rules:
+    - Keep steps as general as possible unless the bug is specific to certain data.
+    - Use the minimum number of steps necessary.
+    - Do not number manually (system does it).
+  examples:
+    bad: "1. http://example.com 2. Observe 3. Search > Sort 4. Observe"
+    good: "1. Go to http://example.com 2. Enter 'San Francisco' in search bar 3. Click 'Search Now' 4. Select 'Sort by price: High to Low'"
+actual_result:
+  rules:
+    - Explain exactly what happened after the last step.
+    - Be detailed and specific (e.g., name specific items not sorting correctly).
+    - Must NOT be the same as the Title.
+    - Must NOT be the simple opposite of the Expected Result.
+  examples:
+    bad: Error shown on the Cart page after clicking on the Checkout button.
+    good: "\"Error 500 - Internal Server error\" is shown after attempting to proceed to Checkout."
+expected_result:
+  rules:
+    - Describe the correct behavior if the bug did not exist.
+    - Must be detailed (what page should load, what data should be saved).
+    - Must NOT be a minor variation or negative of the Actual Result.
+  examples:
+    bad: User can proceed to the Checkout.
+    good: User should be redirected to the Checkout page to add shipping/payment info and place an order.
+environment_rules:
+  - Select the exact device/browser used from your invitation list.
+  - Only one environment per report.
+  - Mention other reproducible environments in the Actual Result if applicable.
+  - Warning: Selecting the wrong environment will lead to rejection.
+report_quality_and_edits:
+  rules:
+    - No placeholders (e.g., "will edit later"). Reports must be complete when submitted.
+    - Use realistic inputs (avoid "asdf", "test123").
+    - Edits are for typo corrections or rephrasing only.
+    - Delete mistakes only BEFORE Team Leader review.

@@ -1,0 +1,68 @@
+topic: Data Privacy
+summary: Learn about data privacy, external/internal threats, and data classification.
+author: Nikola Jonic
+updated: over a year ago
+security_importance:
+  goals: Protect integrity, confidentiality, and availability of data and systems.
+  responsibility: Everyone at Test IO must recognize threats.
+threat_types:
+  external:
+    origin: Outside organization (Internet).
+    methods: Phishing, malware, ransomware, SQL injection, DDoS.
+    impact: Steal, corrupt, or disrupt resources; can infect entire network.
+  internal:
+    origin: Inside organization (employees, contractors).
+    causes: Inadvertent mistakes, intentional misuse, bugs in test scripts (using production data).
+    impact: Unauthorized access, data leakage, misuse, alteration, deletion.
+data_categories_by_origin:
+  - Personal data: Relates to identifiable living individuals.
+  - Customer data: Belongs to the customer.
+  - Project/Program/Account data: Created during project lifecycle.
+  - Company data: Owned by Test IO.
+  Note: Using or sharing these is strictly forbidden.
+confidentiality_classes:
+  public: Freely shared info.
+  confidential: Non-public; leak causes harm. Includes most Test IO info.
+  strictly_confidential: Leak causes significant harm. Requires utmost care and protection.
+personal_data_pii:
+  definition: Any data that could potentially identify a specific individual or de-anonymize data.
+  levels:
+    confidential_pii:
+      - Name
+      - Email address
+      - Personal address
+      - Location info
+      - Performance appraisal
+      - Date of birth
+      - Marital status
+      - Photograph (Test IO treats all photos as strictly confidential)
+    strictly_confidential_pii:
+      - Race or ethnic origin
+      - Political opinions
+      - Religious/philosophical beliefs
+      - Trade union membership
+      - Biometric/Genetic data
+      - Sexual activity/orientation
+      - Health (medical info)
+      - Criminal proceedings/sanctions
+      - Financial/Payment details
+      - Credentials
+      - Personality profiles
+      - Government ID
+      - Social Security measures
+special_strictly_confidential_categories:
+  phi_personal_health_information:
+    - Past/present/future health status or condition.
+    - Provision/payment for health care.
+    - Protected by legal/regulatory requirements.
+  pci_payment_card_information:
+    - Cardholder data (CHD).
+    - Remote access via VPN only; no storage on Test IO systems.
+    - PCI DSS compliant.
+  customer_intellectual_property:
+    - Financial/Legal/Industrial info.
+    - Software technologies (source code, manuals, alpha/beta versions).
+    - Patented inventions and copyrights.
+    - Marketing strategies and client info.
+    - Photographs (may reveal strictly confidential info like health status).
+collection_advice: Seek advice from Community Manager, Crowd Project Coordinator, or CSM if unsure.

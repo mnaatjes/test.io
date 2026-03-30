@@ -1,0 +1,7 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 3
+timestamp: "2026-03-29T21:19:00"
+question_text: "What actions do you have to include in your screencast?"
+provided_answer: "At least the last navigational step, the step triggering the bug and the bug itself. Sometimes more steps for better comprehension of the problem."
+reasoning: "Academy notes emphasize brevity (max 60s) while ensuring the root cause is shown. Irrelevant navigation is discarded to save reviewer time."
+status: "answered"

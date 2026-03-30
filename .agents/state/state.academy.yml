@@ -1,7 +1,7 @@
 id: "state.academy"
-version: "1.0.1"
+version: "1.0.2"
 locked: false
-last_sync: "2024-03-29T20:35:00Z"
+last_sync: "2024-03-29T21:05:00Z"
 status: "updated"
 module_context: "academy-progress"
 directives:
@@ -10,9 +10,16 @@ directives:
 progress:
   onboarding: "completed"
   bugs: "in-progress"
-  academy_notes_count: 1
+  academy_notes_count: 15
   processed_topics:
     - "bug_reporting"
+    - "visual_bugs"
+    - "functional_bugs"
+    - "submission"
+    - "bug_attachments"
+    - "screencasts"
+    - "screenshots"
   notes_files:
-    - "academy/notes/notes_bug_reporting.md"
-    - "academy/notes/notes_bug_reporting.agent.json"
+    - "academy/notes/notes_bug_attachments.md"
+    - "academy/notes/notes_screencasts_guide.md"
+    - "academy/notes/notes_screenshots_guide.md"

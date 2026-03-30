@@ -1,0 +1,7 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 2
+timestamp: "2026-03-29T21:16:00"
+question_text: "Which screenshot meets our quality standards? (Description of the correct image)"
+provided_answer: "The image that shows the whole screen, includes the URL bar, has the bug highlighted/circled, and displays the system date/time clearly."
+reasoning: "Academy standards require the URL field to be visible for websites, the bug to be highlighted, and the date/time to be present as proof of recording. Cropped or un-annotated images are rejected."
+status: "answered"

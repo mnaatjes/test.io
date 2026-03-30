@@ -1,0 +1,10 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 1
+timestamp: "2026-03-29T21:13:00"
+question_text: "Which of the following statements are true about screencast and screenshot attachments? *(3 correct answers)"
+provided_answer:
+  - "A screenshot should be attached when the nature of a bug is static. In all other cases, you should record a screencast."
+  - "The current date must be visible in your screencast/screenshot."
+  - "Any common date formats like DD/MM or MM/DD are acceptable in your screencast/screenshot."
+reasoning: "Academy notes specify that static issues use screenshots while actions require video. Date/time visibility is mandatory within the media itself, and formats must be in English/Latin characters, not Cyrillic."
+status: "answered"

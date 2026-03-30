@@ -1,44 +1,37 @@
-title: "Visual Bugs"
-author: "Markus"
-updated: "11 months ago"
-
+topic: Visual Bugs
+summary: Learn what visual bugs are, how to report them, and how to identify responsive design issues.
+author: Markus
+updated: over 11 months ago
 definition:
-  core_concept: "Bugs relating to the graphical user interfaces (GUI) of websites or apps."
-  typical_examples:
-    - "Layout framework problems (e.g., misaligned text/elements)"
-    - "Responsive Design problems (e.g., element visible on one device but not another)"
-    - "Text/elements unintentionally overlapping"
-    - "Text/elements cut off"
-    - "Anything fixable in HTML or CSS files"
-
-repetition_rule:
-  policy: "Submit ONLY ONCE."
-  description: "If a visual problem occurs repetitively across different URLs or pages, it must be reported in a single report."
-  requirement: "The report should state that other instances are also concerned."
-  rejection_reason: "Individual reports for every occurrence will be rejected."
+  core_concept: Relate to the graphical user interfaces (GUI) of websites or apps.
   examples:
-    - "Multiple elements showing the same graphical scaling problem."
-    - "Input fields across the site too small for default text."
-    - "Multiple teasers overlapping other elements."
-
-functional_upgrade_criteria:
-  upgrade_to_functional:
-    - "If a visual bug prevents a functionality."
-  stay_as_visual:
-    - "If the functionality can be reached intuitively and easily via a different path or option."
-
+    - Layout framework problems (misaligned texts/elements).
+    - Responsive Design problems (element displayed on one mobile device but not another).
+    - Text/elements unintentionally overlapping.
+    - Text/elements cut off.
+    - Anything fixable in HTML or CSS files.
+repetitive_problems_rule:
+  policy: Submit ONLY ONCE even if it occurs on multiple URLs, links, or pages.
+  requirement: State in the single report that other instances are also concerned.
+  rejection: Individual reports for every occurrence will be rejected.
+  reason: Customer only needs one reference to investigate and solve for all occurrences.
+functional_upgrade:
+  criteria: Report as functional if the visual bug PREVENTS functionality.
+  exception: Remains visual if functionality is easily/intuitively reachable via a different path/option.
 documentation:
-  requirement: "Must contain screenshots."
-  optional: "Screencast required if an action causes the visual problem."
-  reference: "See Bug Report Requirements for more details."
-
-responsive_design_insights:
-  common_issues:
-    - "Inconsistent scaling between different pages."
-    - "Text becoming illegible on specific screen sizes."
-    - "Navigation elements/targets becoming too small to tap."
-    - "Unintended horizontal scrolling."
-  tools:
-    - name: "Google Chrome Lighthouse"
-      purpose: "Evaluates mobile usability factors (font size, tap targets, viewport configuration)."
-      usage: "Run directly on the tested website via Chrome browser."
+  screenshots: Mandatory for all visual reports.
+  screencasts: Required if an action causes the visual problem.
+  reference: See "Bug Report Requirements" article.
+responsive_vs_nonresponsive:
+  hidden_bugs: Issues created by responsive design that make information display awkwardly.
+  example_case: A page displays perfectly on a smartphone, but a category page (e.g., "COMEDY") has elements too small to be visible.
+  how_to_identify:
+    - Inconsistent scaling between pages.
+    - Illegible text on specific screen sizes.
+    - Navigation elements too small to tap.
+    - Horizontal scrolling appearing on some pages but not others.
+tools:
+  lighthouse:
+    name: Google Chrome Lighthouse (formerly Google Mobile Friendly Test).
+    purpose: Evaluates mobile usability (font size, tap targets, viewport configuration/SEO section).
+    usage: Add to Google Chrome browser and run directly on the tested website.

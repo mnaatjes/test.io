@@ -1,0 +1,20 @@
+id: quick_reference.bug_report_standards
+name: Bug Report Standards Quick Reference
+description: Essential formatting and documentation requirements for high-quality reports.
+content:
+  title_formula: "What? + Where? + When?"
+  steps_to_reproduce:
+    - 1st Step: Indicate landing page URL/App name.
+    - Last Step: The action that triggers the bug (NOT 'Observe').
+    - Rules: Generalize where possible; minimal steps needed.
+  results:
+    actual: Detailed explanation of the outcome (must not match Title).
+    expected: Description of correct behavior (must not match Actual result).
+  used_environment:
+    - Select exact device/browser from your invitation list.
+    - Submit only one environment per report.
+  quality_checks:
+    - Feature: Select the correct feature first.
+    - Severity: Mandatory for functional bugs (select BEFORE filling).
+    - Realistic Data: Use real-world inputs (no 'asdfg').
+    - No Placeholders: Reports must be complete on submission.

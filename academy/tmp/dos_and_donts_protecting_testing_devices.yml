@@ -1,0 +1,36 @@
+topic: DOs and DON'Ts in Protecting Your Testing Devices
+summary: Best practices, recommendations, and prohibited actions for safeguarding testing devices.
+author: Zorica Micanovic
+updated: over a year ago
+protection_steps:
+  physical_and_digital:
+    - Keep devices (USB drives, laptops) secure.
+    - Lock computer when leaving it, even briefly.
+    - Use long, complex passwords.
+    - Encrypt confidential files.
+    - Do not leave devices unattended when traveling (in cars or luggage).
+  incident_response:
+    - Report lost/stolen devices to Test IO Support and change login password.
+    - If infected: Close all programs, shut down system, and take to a certified maintenance office.
+dos_list:
+  - Set strong passwords.
+  - Lock devices when not in use.
+  - Keep software (OS and browser) up to date.
+  - Restrict access to your computer when not in use.
+  - Be cautious online (verify senders/content).
+donts_list:
+  - Do not share passwords or sensitive info.
+  - Do not leave devices unattended.
+  - Do not use outdated or unsupported software.
+  - Do not allow others access to your computer.
+  - Do not open suspicious emails or click unfamiliar attachments/links.
+prohibited_activities:
+  - Peer-to-peer (P2P) software (e.g., torrent clients) unless authorized.
+  - Sharing copyrighted material without permission.
+  - Pornography software or websites.
+  - Key generators, cracking software, and Wi-Fi hacking tools.
+  - Anonymizers or software bypassing network monitoring/tracking.
+  - Outdated/unsupported/vulnerable software.
+  - Non-standard encryption tools.
+  - Cryptocurrency mining software or using company resources for profit.
+  - Hacking software for attacking infrastructure/applications.

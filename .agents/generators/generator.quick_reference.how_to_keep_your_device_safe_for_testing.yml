@@ -1,0 +1,25 @@
+id: quick_reference.how_to_keep_your_device_safe_for_testing
+name: Device Safety Quick Reference
+description: Essential steps for protecting testing devices from data leakage and viruses.
+content:
+  data_leakage_prevention:
+    browser: Keep updated; no passwords in browser.
+    passwords: Strong, unique; enable 2FA; shield in public.
+    network: WPA3 encryption; VPN on public Wi-Fi.
+    encryption: Enable device-level encryption.
+    physical: Use lock screen/biometrics; lock computer when not in use; don't leave unattended.
+    backups: Regular backups to external drive/secure cloud; verify integrity.
+  virus_protection:
+    software: Reputable antivirus; keep updated; run regular scans.
+    updates: Keep OS, apps, and antivirus up-to-date.
+  spam_prevention:
+    - Avoid links/attachments from unknown sources.
+    - Enable spam filters.
+    - Caution with "unsubscribe" links in suspicious emails.
+    - Customize mobile notifications.
+  additional_tips:
+    - Review app permissions.
+    - Use encrypted messaging apps.
+    - Monitor account activity for suspicious transactions.
+  malicious_sites_to_avoid:
+    - Imageconvertors[.]com, convertitoremp3[.]it, convertisseurs-pdf[.]com, convertscloud[.]com, convertix-api[.]xyz, convertallfiles[.]com, freejpgtopdfconverter[.]com, primeconvertapp[.]com, 9convert[.]com, Convertpro[.]org.

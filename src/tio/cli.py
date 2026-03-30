@@ -11,11 +11,11 @@ def run_cli():
     parser.add_argument("-v", "--verbose", action="store_true", help="Show detailed command instructions")
     parser.add_argument("--for", dest="for_module", help="Filter for a specific module")
     
-    # Quiz Specific Flags
-    parser.add_argument("--start", dest="quiz_start", help="Start a new quiz session (Optional: quiz number)")
-    parser.add_argument("--eoq", "--end", "--quit", "--q", dest="quiz_end", action="store_true", help="End the current quiz session")
+    # Session Management Flags (Context-sensitive for quiz/intake)
+    parser.add_argument("--start", dest="start", help="Start a new session (quiz or intake)")
+    parser.add_argument("--end", "--eoq", "--quit", "--q", "--iprocess", dest="end", action="store_true", help="End the current session")
 
-    parser.add_argument("cmd", nargs="?", help="Command(s) (e.g., 'g', 'sync', 'quiz')")
+    parser.add_argument("cmd", nargs="?", help="Command(s) (e.g., 'g', 'sync', 'quiz', 'intake')")
     parser.add_argument("module", nargs="?", help="Target or question text")
     parser.add_argument("--raw", action="store_true", help="Output raw data instead of formatted UI")
     
@@ -23,8 +23,8 @@ def run_cli():
     
     options = {
         "verbose": args.verbose,
-        "quiz_start": args.quiz_start,
-        "quiz_end": args.quiz_end
+        "start": args.start,
+        "end": args.end
     }
     
     tio = TioOrchestrator(raw_mode=args.raw, options=options)

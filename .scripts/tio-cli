@@ -29,7 +29,9 @@ COMMAND_MAP = {
     "w": ("workflow", "Generate execution checklists", "templates/workflows/"),
     "l": ("list", "Show command registry table", "N/A"),
     "h": ("help", "Show detailed usage & syntax", "N/A"),
-    "sync": ("sync", "Synchronize all JSON manifests", "manifests/")
+    "sync": ("sync", "Synchronize all JSON manifests", "manifests/"),
+    "update": ("update", "Update Gemini context by re-syncing manifests", "manifests/"),
+    "init": ("update", "Initialize/Update the agent's workspace knowledge", "manifests/")
 }
 
 class TioOrchestrator:
@@ -94,6 +96,15 @@ class TioOrchestrator:
             self.list_commands()
         elif cmd_input == "sync":
             self.sync_all()
+        elif cmd_input in ["update", "init"]:
+            self.sync_all()
+            console.print("[bold green]Gemini context updated successfully![/bold green]")
+            # Display a summary of manifests
+            for manifest_file in MANIFEST_DIR.glob("manifest.*.json"):
+                with open(manifest_file, 'r') as f:
+                    data = json.load(f)
+                    count = len(data.get("files", [])) if "files" in data else 0
+                    console.print(f"  [cyan]•[/cyan] {manifest_file.name}: {count} items")
         else:
             resolved = COMMAND_MAP.get(cmd_input)
             if not resolved:

@@ -1,0 +1,50 @@
+topic: Social Engineering Techniques
+summary: Discover social engineering risks and how to recognize and avoid them.
+author: Nikola Jonic
+updated: over a year ago
+risks:
+  definition: Associated with loss of confidentiality, integrity, or availability of information/data/systems.
+  impact: Adverse impact on organization's operations (mission, functions, image, reputation).
+vulnerabilities:
+  definition: Weaknesses in computer/network susceptible to exploitation (unauthorized use/access).
+  examples: Weak security procedures, internal controls, physical configuration, features/bugs bypassing security.
+threats:
+  definition: Anything capable of harming an asset and/or organization.
+  types:
+    adversarial: Individual, group, or organization.
+    accidental: User or administrator.
+    structural: IT equipment, software, control devices.
+    environmental: Natural/man-made disaster, infrastructure failure.
+social_engineering:
+  definition: Non-technical intrusion relying on human interaction/tricking people.
+  core_exploit: Exploiting natural human tendency to trust.
+  channels: Instant messengers, emails, phone calls, etc.
+  techniques:
+    - name: Simple Direct Request
+      description: Asking directly for information.
+    - name: Dumpster Diving
+      description: Going through trash to obtain identity-stealing information.
+    - name: Raiding Mailboxes
+      description: Illegally opening/stealing from postal mailboxes.
+    - name: Phishing
+      description: Online scam via legitimate-looking emails asking for sensitive info.
+    - name: Impersonation
+      description: Pretending to be authority figures (IT support, managers, vendors).
+    - name: Surfing Company Websites
+      description: Obtaining employee info, charts, and financial data from public sites.
+intruder_toolkit:
+  vulnerability_scanning: Internet hackers scan networks for weaknesses (pre-attack probe).
+  password_cracker: Automated guessing or dictionary-based login attempts.
+  network_spoofing: Impersonating sign-on routines to collect passwords.
+  viruses: Programs infecting files by inserting copies of themselves.
+  worms: Independent programs reproducing across networks (often via email attachments).
+  logic_bombs: Code triggered by specific conditions to perform malicious functions.
+  ransomware: Malicious software encrypting files and demanding ransom (often in Bitcoin).
+  dos_attacks: Overloading machines/networks with requests to make them unavailable.
+defense:
+  weakest_link: Human factor (phishing, weak passwords, ignoring updates).
+  tester_responsibility: Safeguard Test IO/customer info, maintain internet safety.
+  vigilance_actions:
+    - Maintain strong security controls on servers/desktops.
+    - Use firewalls to filter internet traffic.
+    - Protect and update IT resources with latest patches.

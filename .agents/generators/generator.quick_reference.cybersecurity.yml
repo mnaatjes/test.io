@@ -1,0 +1,31 @@
+id: quick_reference.cybersecurity
+name: Cybersecurity Quick Reference
+description: Essential cybersecurity rules for Test IO testers.
+content:
+  phishing_checks:
+    - Do you know the sender?
+    - Is it expected (attachment)?
+    - Header/Subject make sense?
+    - Spelling/Grammar errors?
+    - Generic greeting ("Dear Customer")?
+    - Sense of urgency?
+    - Suspicious links (hover)?
+    - Unknown attachment types (.exe)?
+  data_privacy:
+    confidential_pii: Name, email, address, location, photo.
+    strictly_confidential_pii: Race, politics, religion, biometric, health, financial, credentials, Gov ID.
+    reporting: Ask Community Manager/Crowd Coordinator if unsure.
+  device_safety:
+    - Keep browser/OS updated.
+    - No passwords in browser.
+    - Use strong passwords + 2FA.
+    - Use WPA3; VPN on public Wi-Fi.
+    - Lock screen/devices always.
+    - Encrypt storage; regular backups.
+  dos_and_donts:
+    do: Lock devices, keep updated, be cautious.
+    dont: Share passwords, leave unattended, open suspicious mail.
+    prohibited: P2P, piracy, porn, hacking tools, crypto mining.
+  phishing_action:
+    do: Click "Report Phish" button in Outlook.
+    dont: Click links, open attachments, or respond.

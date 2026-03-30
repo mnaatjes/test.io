@@ -1,0 +1,25 @@
+id: quick_reference.functional_bugs_assessment
+name: Functional Bugs Assessment Quick Reference
+description: Severity levels and identification strategies for functional defects.
+content:
+  definition: Software fails to respond as expected to user actions.
+  severity_low:
+    - Minimal impact; general usage intact.
+    - Few users/items affected.
+    - Feature broken but easy workaround exists.
+  severity_high:
+    - Serious impact; main functionality intact.
+    - Large number of users/items affected.
+    - Non-trivial functionality broken (no workaround).
+    - Important functionality broken but workaround exists.
+  severity_critical:
+    - Core functionality prevented (Showstopper).
+    - Prevents main process (e.g., checkout).
+    - Notable loss of sales.
+  special_cases:
+    edge_cases: Unusual actions; Low severity if relevant.
+    forced_bugs: Nontypical behavior (multiple taps, zoom, modified OS); OUT OF SCOPE.
+  strategy:
+    - Look for evidence (not just "different" behavior).
+    - If it consistently works one way without issues, it's a Usability Suggestion.
+    - Upgrade visual/content issues if they hinder functionality.

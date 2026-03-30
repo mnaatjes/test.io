@@ -1,0 +1,19 @@
+id: quick_reference.data_privacy
+name: Data Privacy Quick Reference
+description: Essential data privacy and PII classification for Test IO.
+content:
+  data_categories:
+    forbidden: Personal, Customer, Project, Company.
+  confidentiality:
+    public: Freely shared.
+    confidential: Most Test IO info; leak causes harm.
+    strictly_confidential: Leak causes significant harm; protect with care.
+  pii_levels:
+    confidential_pii: Name, email, personal address, location, photo.
+    strictly_confidential_pii: Race, politics, religion, biometric/genetic, health, sexual orientation, financial data, Gov ID, Social Security.
+  special_categories:
+    phi: Personal Health Information (protected).
+    pci: Payment Card Information (PCI DSS compliant; access via VPN only).
+    intellectual_property: Financial, Legal, Code, Marketing.
+  action:
+    if_unsure: Contact Community Manager or Crowd Coordinator for advice.

@@ -1,0 +1,22 @@
+id: quick_reference.social_engineering_techniques
+name: Social Engineering Quick Reference
+description: Recognizing social engineering risks and intruder techniques.
+content:
+  techniques:
+    - Direct Request: Asking for data.
+    - Dumpster Diving: Searching trash for ID data.
+    - Raiding Mailboxes: Stealing postal mail.
+    - Phishing: Counterfeit emails/sites.
+    - Impersonation: Pretending to be authority.
+    - Website Surfing: Gathering public intel.
+  intruder_toolkit:
+    vulnerability_scanning: Network probes for weaknesses.
+    password_crackers: Automated guessing/dictionary login attempts.
+    network_spoofing: Impersonating sign-on to steal passwords.
+    viruses_worms: Malicious self-replicating code.
+    logic_bombs: Trigger-based malicious code.
+    ransomware: Data encryption for ransom (Bitcoin).
+    dos_attacks: Resource overloading to cause service unavailability.
+  defense:
+    weakest_link: Human factor (phishing, weak passwords).
+    actions: Maintain controls, use firewalls, update software.

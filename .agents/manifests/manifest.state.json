@@ -1,12 +1,24 @@
 {
   "directory": "state",
-  "last_sync": "2026-03-29T21:14:43.732510",
+  "last_sync": "2026-03-30T13:08:00.631998",
   "files": [
+    {
+      "id": "intake",
+      "path": ".agents/state/state.intake.yml",
+      "locked": false,
+      "size": 3882
+    },
+    {
+      "id": "quiz",
+      "path": ".agents/state/state.quiz.yml",
+      "locked": false,
+      "size": 5183
+    },
     {
       "id": "academy",
       "path": ".agents/state/state.academy.yml",
       "locked": false,
-      "size": 508
+      "size": 683
     }
   ]
 }

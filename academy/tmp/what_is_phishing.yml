@@ -1,0 +1,37 @@
+topic: What Is Phishing?
+summary: Learn about phishing, how it works, and how to identify suspicious emails.
+author: Zorica Micanovic
+updated: over 11 months ago
+phishing_definition:
+  description: Social engineering involving counterfeit emails/websites to deceive users into disclosing personal/financial data.
+  targets: Social security numbers, bank/credit card info, online passwords.
+technical_threats:
+  reverse_connected_shellcode: Encoded shellcode in attachments that bypasses antivirus and connects back to the attacker.
+  firewall_limitations: Firewalls may allow these connections to be established.
+suspicious_email_checklist:
+  - Do you know the sender?
+  - Have you received email from them before?
+  - Were you expecting this message/attachment?
+  - Does the header (sender, subject, attachment) make sense?
+  - Is it work-related or initiated by you?
+  - Does attachment name match the context?
+  - Are there spelling/grammar errors?
+  - Does antivirus flag it?
+prohibitions_donts:
+  - Do not click links in emails (e.g., bank update requests).
+  - Do not open attachments/macros from unknown senders.
+  - Do not respond to or forward suspicious emails.
+  - Do not enter credentials after clicking links.
+  - Do not share government ID info.
+  - Do not click links in spam.
+requirements_dos:
+  - Report suspicious/unwanted emails using "Check SPAM/Malicious" or "Report Phish" buttons in Outlook.
+  - Delete malicious emails only after reporting.
+top_7_phishing_signs:
+  1. Unfamiliar/illegitimate address: Mismatched display names or unusual domains (e.g., @yahoo.com instead of corporate).
+  2. Sense of urgency: Subject lines like "Urgent!" or "Action Required!".
+  3. Generic greeting: Impersonal greetings like "Dear Customer".
+  4. Spelling/grammar mistakes: Errors in mass-sent emails.
+  5. Uncommon requests: Unexpected requests to wire money or share sensitive info.
+  6. Suspicious links: Destination URLs that don't match the link text (hover to check).
+  7. Suspicious attachments: Unexpected attachments, especially .exe files.

@@ -1,0 +1,28 @@
+id: quick_reference.what_is_phishing
+name: Phishing Quick Reference
+description: Identifying and reporting phishing attempts.
+content:
+  definition: Fake emails, messengers, websites mimicking businesses.
+  technical_threats:
+    reverse_shellcode: Encoded attachments that connect back to attacker.
+    firewall: Some connections may bypass firewalls.
+  email_checklist:
+    - Sender known?
+    - Expected message/attachment?
+    - Header/Subject/Attachment sense?
+    - Spelling/Grammar errors?
+    - Generic greeting?
+    - Urgent terms used?
+  phishing_signs:
+    - Mismatched domains (e.g., @yahoo.com for a bank).
+    - Urgent action required.
+    - Hover reveals mismatched links.
+    - Unusual attachments (.exe).
+  dos:
+    - Use "Report Phish" button in Outlook.
+    - Delete only after reporting.
+  donts:
+    - Click links or open attachments.
+    - Respond to or forward suspicious emails.
+    - Enter credentials from unknown links.
+    - Share Gov ID info.

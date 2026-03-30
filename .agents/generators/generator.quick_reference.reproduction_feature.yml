@@ -1,0 +1,18 @@
+id: quick_reference.reproduction_feature
+name: Reproduction Feature Quick Reference
+description: Locating, submitting, and deleting reproductions on the interface.
+content:
+  locations:
+    - Dashboard: TL-approved bug requests.
+    - Inside Reports: "Start Reproduction" button.
+    - Similar Bugs: Button on the right while filing.
+    - Bug List: "Reproductions available" toggle switch.
+  submission:
+    - Choose type (Positive/Negative).
+    - Select environment.
+    - Upload screencast.
+    - Click "Create reproduction".
+  deletion:
+    - Go to "My Reproductions" tab.
+    - Open reproduction details.
+    - Click "Delete" at bottom.

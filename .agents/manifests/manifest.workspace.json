@@ -1,7 +1,7 @@
 {
   "type": "project-snapshot",
-  "last_sync": "2026-03-29T21:14:43.991599",
-  "file_count": 76,
+  "last_sync": "2026-03-30T13:08:00.920854",
+  "file_count": 132,
   "files": [
     {
       "name": ".gitignore",
@@ -55,8 +55,8 @@
     {
       "name": "tio-cli",
       "rel_path": ".scripts/tio-cli",
-      "size": 4896,
-      "mtime": 1774814044.4631617,
+      "size": 5623,
+      "mtime": 1774825904.981718,
       "ext": ""
     },
     {
@@ -104,22 +104,22 @@
     {
       "name": "cli.py",
       "rel_path": "src/tio/cli.py",
-      "size": 1759,
-      "mtime": 1774817977.8936107,
+      "size": 1814,
+      "mtime": 1774827990.7001133,
       "ext": ".py"
     },
     {
       "name": "core.py",
       "rel_path": "src/tio/core.py",
-      "size": 4585,
-      "mtime": 1774817986.402653,
+      "size": 6794,
+      "mtime": 1774828391.8965778,
       "ext": ".py"
     },
     {
       "name": "bridge.py",
       "rel_path": "src/tio/actions/bridge.py",
-      "size": 1735,
-      "mtime": 1774815778.3967254,
+      "size": 3956,
+      "mtime": 1774827879.4403772,
       "ext": ".py"
     },
     {
@@ -127,6 +127,20 @@
       "rel_path": "src/tio/actions/notes.py",
       "size": 3102,
       "mtime": 1774817870.622075,
+      "ext": ".py"
+    },
+    {
+      "name": "update.py",
+      "rel_path": "src/tio/actions/update.py",
+      "size": 3508,
+      "mtime": 1774825719.9249675,
+      "ext": ".py"
+    },
+    {
+      "name": "intake.py",
+      "rel_path": "src/tio/actions/intake.py",
+      "size": 2796,
+      "mtime": 1774827889.3345976,
       "ext": ".py"
     },
     {
@@ -158,6 +172,13 @@
       "ext": ".py"
     },
     {
+      "name": "quiz.py",
+      "rel_path": "src/tio/actions/quiz.py",
+      "size": 3346,
+      "mtime": 1774820585.8760805,
+      "ext": ".py"
+    },
+    {
       "name": "quick_ref.py",
       "rel_path": "src/tio/actions/quick_ref.py",
       "size": 2058,
@@ -179,46 +200,74 @@
       "ext": ".yml"
     },
     {
+      "name": "state.intake.yml",
+      "rel_path": ".agents/state/state.intake.yml",
+      "size": 3882,
+      "mtime": 1774830240.749842,
+      "ext": ".yml"
+    },
+    {
+      "name": "state.quiz.yml",
+      "rel_path": ".agents/state/state.quiz.yml",
+      "size": 5183,
+      "mtime": 1774830925.3251615,
+      "ext": ".yml"
+    },
+    {
       "name": "state.academy.yml",
       "rel_path": ".agents/state/state.academy.yml",
-      "size": 508,
-      "mtime": 1774816433.7869892,
+      "size": 683,
+      "mtime": 1774819918.3242588,
       "ext": ".yml"
     },
     {
       "name": "manifest.workspace.json",
       "rel_path": ".agents/manifests/manifest.workspace.json",
-      "size": 11244,
-      "mtime": 1774817749.311462,
+      "size": 25804,
+      "mtime": 1774831918.1754992,
+      "ext": ".json"
+    },
+    {
+      "name": "manifest.environment.json",
+      "rel_path": ".agents/manifests/manifest.environment.json",
+      "size": 219,
+      "mtime": 1774825909.5244887,
       "ext": ".json"
     },
     {
       "name": "manifest.state.json",
       "rel_path": ".agents/manifests/manifest.state.json",
-      "size": 214,
-      "mtime": 1774818883.7328992,
+      "size": 460,
+      "mtime": 1774876080.6408925,
       "ext": ".json"
     },
     {
       "name": "manifest.templates.json",
       "rel_path": ".agents/manifests/manifest.templates.json",
       "size": 90,
-      "mtime": 1774818883.7328992,
+      "mtime": 1774876080.6418924,
       "ext": ".json"
     },
     {
       "name": "manifest.generators.json",
       "rel_path": ".agents/manifests/manifest.generators.json",
-      "size": 1850,
-      "mtime": 1774818883.7298992,
+      "size": 4337,
+      "mtime": 1774876080.6288924,
       "ext": ".json"
     },
     {
       "name": "manifest.monitors.json",
       "rel_path": ".agents/manifests/manifest.monitors.json",
       "size": 222,
-      "mtime": 1774818883.730899,
+      "mtime": 1774876080.6308925,
       "ext": ".json"
+    },
+    {
+      "name": "generator.quick_reference.screenshots.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.screenshots.yml",
+      "size": 757,
+      "mtime": 1774819911.0862157,
+      "ext": ".yml"
     },
     {
       "name": "generator.monitors.yml",
@@ -235,6 +284,41 @@
       "ext": ".yml"
     },
     {
+      "name": "generator.quick_reference.functional_bugs_assessment.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.functional_bugs_assessment.yml",
+      "size": 1152,
+      "mtime": 1774829972.0460725,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.bug_attachments.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.bug_attachments.yml",
+      "size": 765,
+      "mtime": 1774819899.0261438,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.what_is_phishing.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.what_is_phishing.yml",
+      "size": 972,
+      "mtime": 1774828823.3912275,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.bug_report_standards.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.bug_report_standards.yml",
+      "size": 976,
+      "mtime": 1774829988.9016213,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.social_engineering_techniques.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.social_engineering_techniques.yml",
+      "size": 1035,
+      "mtime": 1774828816.6118963,
+      "ext": ".yml"
+    },
+    {
       "name": "generator.quick_reference.academy.yml",
       "rel_path": ".agents/generators/generator.quick_reference.academy.yml",
       "size": 703,
@@ -246,6 +330,20 @@
       "rel_path": ".agents/generators/generator.quick_reference.submission.yml",
       "size": 830,
       "mtime": 1774817744.370437,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.data_privacy.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.data_privacy.yml",
+      "size": 921,
+      "mtime": 1774828811.4786446,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.screencasts.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.screencasts.yml",
+      "size": 778,
+      "mtime": 1774819904.6021771,
       "ext": ".yml"
     },
     {
@@ -270,10 +368,38 @@
       "ext": ".yml"
     },
     {
+      "name": "generator.quick_reference.bug_reproductions.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.bug_reproductions.yml",
+      "size": 828,
+      "mtime": 1774830259.664368,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.reproduction_feature.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.reproduction_feature.yml",
+      "size": 643,
+      "mtime": 1774830265.149668,
+      "ext": ".yml"
+    },
+    {
       "name": "generator.quick_reference.functional_bugs.yml",
       "rel_path": ".agents/generators/generator.quick_reference.functional_bugs.yml",
       "size": 905,
       "mtime": 1774817739.0674098,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.cybersecurity.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.cybersecurity.yml",
+      "size": 1221,
+      "mtime": 1774828682.912068,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.content_bugs.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.content_bugs.yml",
+      "size": 916,
+      "mtime": 1774829978.5413036,
       "ext": ".yml"
     },
     {
@@ -291,6 +417,13 @@
       "ext": ".yml"
     },
     {
+      "name": "generator.quick_reference.dos_and_donts_protecting_testing_devices.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.dos_and_donts_protecting_testing_devices.yml",
+      "size": 1506,
+      "mtime": 1774828840.3150485,
+      "ext": ".yml"
+    },
+    {
       "name": "generator.manifests.yml",
       "rel_path": ".agents/generators/generator.manifests.yml",
       "size": 2377,
@@ -300,8 +433,15 @@
     {
       "name": "generator.quick_reference.visual_bugs.yml",
       "rel_path": ".agents/generators/generator.quick_reference.visual_bugs.yml",
-      "size": 881,
-      "mtime": 1774817730.4063656,
+      "size": 986,
+      "mtime": 1774829966.9078894,
+      "ext": ".yml"
+    },
+    {
+      "name": "generator.quick_reference.how_to_keep_your_device_safe_for_testing.yml",
+      "rel_path": ".agents/generators/generator.quick_reference.how_to_keep_your_device_safe_for_testing.yml",
+      "size": 1352,
+      "mtime": 1774828830.0285504,
       "ext": ".yml"
     },
     {
@@ -316,6 +456,13 @@
       "rel_path": ".agents/templates/state_tracking/template.reproduction.yml",
       "size": 700,
       "mtime": 1774809048.378521,
+      "ext": ".yml"
+    },
+    {
+      "name": "template.intake.yml",
+      "rel_path": ".agents/templates/state_tracking/template.intake.yml",
+      "size": 86,
+      "mtime": 1774827895.676739,
       "ext": ".yml"
     },
     {
@@ -340,38 +487,59 @@
       "ext": ".yml"
     },
     {
+      "name": "notes_how_to_keep_your_device_safe_for_testing.md",
+      "rel_path": "academy/notes/notes_how_to_keep_your_device_safe_for_testing.md",
+      "size": 1638,
+      "mtime": 1774828797.2589436,
+      "ext": ".md"
+    },
+    {
       "name": "notes_failed_test_case_steps.md",
       "rel_path": "academy/notes/notes_failed_test_case_steps.md",
       "size": 1597,
-      "mtime": 1774817877.404109,
+      "mtime": 1774819890.880095,
       "ext": ".md"
     },
     {
       "name": "notes_bug_report_standards.md",
       "rel_path": "academy/notes/notes_bug_report_standards.md",
-      "size": 2921,
-      "mtime": 1774817877.4331093,
+      "size": 1619,
+      "mtime": 1774829962.4207294,
       "ext": ".md"
     },
     {
       "name": "notes_quick_start_guide.md",
       "rel_path": "academy/notes/notes_quick_start_guide.md",
       "size": 1974,
-      "mtime": 1774817877.411109,
+      "mtime": 1774819890.886095,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_data_privacy.md",
+      "rel_path": "academy/notes/notes_data_privacy.md",
+      "size": 1393,
+      "mtime": 1774828775.482858,
       "ext": ".md"
     },
     {
       "name": "notes_test_process_and_submission.md",
       "rel_path": "academy/notes/notes_test_process_and_submission.md",
       "size": 2042,
-      "mtime": 1774817877.4401093,
+      "mtime": 1774819890.9220953,
       "ext": ".md"
     },
     {
       "name": "notes_user_profile_snapshot.md",
       "rel_path": "academy/notes/notes_user_profile_snapshot.md",
       "size": 553,
-      "mtime": 1774817877.407109,
+      "mtime": 1774819890.882095,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_screenshots_guide.md",
+      "rel_path": "academy/notes/notes_screenshots_guide.md",
+      "size": 681,
+      "mtime": 1774819890.8870952,
       "ext": ".md"
     },
     {
@@ -382,38 +550,94 @@
       "ext": ".json"
     },
     {
+      "name": "notes_bug_attachments.md",
+      "rel_path": "academy/notes/notes_bug_attachments.md",
+      "size": 2004,
+      "mtime": 1774819890.9160953,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_what_is_phishing.md",
+      "rel_path": "academy/notes/notes_what_is_phishing.md",
+      "size": 1409,
+      "mtime": 1774828790.474607,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_bug_reproductions.md",
+      "rel_path": "academy/notes/notes_bug_reproductions.md",
+      "size": 1623,
+      "mtime": 1774830248.4648213,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_social_engineering_techniques.md",
+      "rel_path": "academy/notes/notes_social_engineering_techniques.md",
+      "size": 1458,
+      "mtime": 1774828784.4293058,
+      "ext": ".md"
+    },
+    {
       "name": "notes_discord_community.md",
       "rel_path": "academy/notes/notes_discord_community.md",
       "size": 1509,
-      "mtime": 1774817877.4221091,
+      "mtime": 1774819890.8990953,
       "ext": ".md"
     },
     {
       "name": "notes_utest_vs_testio.md",
       "rel_path": "academy/notes/notes_utest_vs_testio.md",
       "size": 2764,
-      "mtime": 1774817877.419109,
+      "mtime": 1774819890.8960953,
       "ext": ".md"
     },
     {
       "name": "notes_visual_bugs.md",
       "rel_path": "academy/notes/notes_visual_bugs.md",
-      "size": 1879,
-      "mtime": 1774817877.429109,
+      "size": 1500,
+      "mtime": 1774829943.8730676,
       "ext": ".md"
     },
     {
       "name": "notes_functional_bugs_assessment.md",
       "rel_path": "academy/notes/notes_functional_bugs_assessment.md",
-      "size": 2481,
-      "mtime": 1774818880.4218683,
+      "size": 1943,
+      "mtime": 1774829951.9023542,
       "ext": ".md"
     },
     {
       "name": "notes_specialized_campaigns.md",
       "rel_path": "academy/notes/notes_specialized_campaigns.md",
       "size": 1703,
-      "mtime": 1774817877.4251091,
+      "mtime": 1774819890.9020953,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_reproduction_feature.md",
+      "rel_path": "academy/notes/notes_reproduction_feature.md",
+      "size": 936,
+      "mtime": 1774830254.1810753,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_screencasts_guide.md",
+      "rel_path": "academy/notes/notes_screencasts_guide.md",
+      "size": 1254,
+      "mtime": 1774819890.9190953,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_dos_and_donts_protecting_testing_devices.md",
+      "rel_path": "academy/notes/notes_dos_and_donts_protecting_testing_devices.md",
+      "size": 1350,
+      "mtime": 1774828804.1372836,
+      "ext": ".md"
+    },
+    {
+      "name": "notes_cybersecurity.md",
+      "rel_path": "academy/notes/notes_cybersecurity.md",
+      "size": 3432,
+      "mtime": 1774828672.68552,
       "ext": ".md"
     },
     {
@@ -426,15 +650,15 @@
     {
       "name": "notes_content_bugs.md",
       "rel_path": "academy/notes/notes_content_bugs.md",
-      "size": 2278,
-      "mtime": 1774818876.3048296,
+      "size": 1470,
+      "mtime": 1774829956.8765318,
       "ext": ".md"
     },
     {
       "name": "notes_bug_status_meanings.md",
       "rel_path": "academy/notes/notes_bug_status_meanings.md",
       "size": 1967,
-      "mtime": 1774817877.4371092,
+      "mtime": 1774819890.9130952,
       "ext": ".md"
     },
     {
@@ -452,6 +676,13 @@
       "ext": ".yml"
     },
     {
+      "name": "data_privacy.yml",
+      "rel_path": "academy/tmp/data_privacy.yml",
+      "size": 2887,
+      "mtime": 1774828566.9386013,
+      "ext": ".yml"
+    },
+    {
       "name": "quick_start_guide.yml",
       "rel_path": "academy/tmp/quick_start_guide.yml",
       "size": 2048,
@@ -459,10 +690,17 @@
       "ext": ".yml"
     },
     {
+      "name": "screenshots_guide.yml",
+      "rel_path": "academy/tmp/screenshots_guide.yml",
+      "size": 679,
+      "mtime": 1774819882.5970454,
+      "ext": ".yml"
+    },
+    {
       "name": "content_bugs.yml",
       "rel_path": "academy/tmp/content_bugs.yml",
-      "size": 2162,
-      "mtime": 1774810154.3730485,
+      "size": 2045,
+      "mtime": 1774829784.1583192,
       "ext": ".yml"
     },
     {
@@ -487,17 +725,38 @@
       "ext": ".yml"
     },
     {
+      "name": "social_engineering_techniques.yml",
+      "rel_path": "academy/tmp/social_engineering_techniques.yml",
+      "size": 2831,
+      "mtime": 1774828465.081399,
+      "ext": ".yml"
+    },
+    {
       "name": "visual_bugs.yml",
       "rel_path": "academy/tmp/visual_bugs.yml",
-      "size": 1907,
-      "mtime": 1774810195.6859183,
+      "size": 2030,
+      "mtime": 1774829731.1513882,
+      "ext": ".yml"
+    },
+    {
+      "name": "reproduction_course_intro.yml",
+      "rel_path": "academy/tmp/reproduction_course_intro.yml",
+      "size": 408,
+      "mtime": 1774830140.5476563,
       "ext": ".yml"
     },
     {
       "name": "bug_report_standards.yml",
       "rel_path": "academy/tmp/bug_report_standards.yml",
-      "size": 3012,
-      "mtime": 1774809379.6657574,
+      "size": 3147,
+      "mtime": 1774829810.1112602,
+      "ext": ".yml"
+    },
+    {
+      "name": "bug_reproductions.yml",
+      "rel_path": "academy/tmp/bug_reproductions.yml",
+      "size": 1627,
+      "mtime": 1774830177.7508023,
       "ext": ".yml"
     },
     {
@@ -505,6 +764,48 @@
       "rel_path": "academy/tmp/bug_status_meanings.yml",
       "size": 1972,
       "mtime": 1774809396.224908,
+      "ext": ".yml"
+    },
+    {
+      "name": "bug_attachments.yml",
+      "rel_path": "academy/tmp/bug_attachments.yml",
+      "size": 2038,
+      "mtime": 1774819882.5970454,
+      "ext": ".yml"
+    },
+    {
+      "name": "how_to_keep_your_device_safe_for_testing.yml",
+      "rel_path": "academy/tmp/how_to_keep_your_device_safe_for_testing.yml",
+      "size": 2277,
+      "mtime": 1774828584.2336028,
+      "ext": ".yml"
+    },
+    {
+      "name": "screencasts_guide.yml",
+      "rel_path": "academy/tmp/screencasts_guide.yml",
+      "size": 1277,
+      "mtime": 1774819882.5970454,
+      "ext": ".yml"
+    },
+    {
+      "name": "dos_and_donts_protecting_testing_devices.yml",
+      "rel_path": "academy/tmp/dos_and_donts_protecting_testing_devices.yml",
+      "size": 1718,
+      "mtime": 1774828657.3166888,
+      "ext": ".yml"
+    },
+    {
+      "name": "what_is_phishing.yml",
+      "rel_path": "academy/tmp/what_is_phishing.yml",
+      "size": 2059,
+      "mtime": 1774828510.109208,
+      "ext": ".yml"
+    },
+    {
+      "name": "reproduction_feature.yml",
+      "rel_path": "academy/tmp/reproduction_feature.yml",
+      "size": 1114,
+      "mtime": 1774830197.8438191,
       "ext": ".yml"
     },
     {
@@ -520,6 +821,97 @@
       "size": 2472,
       "mtime": 1774810139.6260922,
       "ext": ".yml"
+    },
+    {
+      "name": "report_20260330_0035.md",
+      "rel_path": "academy/quizzes/notes/report_20260330_0035.md",
+      "size": 4679,
+      "mtime": 1774830949.673426,
+      "ext": ".md"
+    },
+    {
+      "name": "report_20260330_0011.md",
+      "rel_path": "academy/quizzes/notes/report_20260330_0011.md",
+      "size": 5846,
+      "mtime": 1774829481.029065,
+      "ext": ".md"
+    },
+    {
+      "name": "report_20260329_2142.md",
+      "rel_path": "academy/quizzes/notes/report_20260329_2142.md",
+      "size": 2032,
+      "mtime": 1774820435.4892385,
+      "ext": ".md"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q5.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q5.yml",
+      "size": 524,
+      "mtime": 1774820277.167343,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q6.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q6.yml",
+      "size": 485,
+      "mtime": 1774820320.131587,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q2.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q2.yml",
+      "size": 571,
+      "mtime": 1774820172.9017465,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q3.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q3.yml",
+      "size": 501,
+      "mtime": 1774820226.0800514,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q1.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q1.yml",
+      "size": 765,
+      "mtime": 1774820067.6291375,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Media_and_Attachments_q4.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Media_and_Attachments_q4.yml",
+      "size": 403,
+      "mtime": 1774820260.85725,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Cybersecurity.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Cybersecurity.yml",
+      "size": 6316,
+      "mtime": 1774829470.5476646,
+      "ext": ".yml"
+    },
+    {
+      "name": "quiz_Reproduction.yml",
+      "rel_path": "academy/quizzes/questions/quiz_Reproduction.yml",
+      "size": 5004,
+      "mtime": 1774830937.4247909,
+      "ext": ".yml"
+    },
+    {
+      "name": "reproduction_checklist.md",
+      "rel_path": "academy/tasks/20260329_Attachment_Practical_Task/reproduction_checklist.md",
+      "size": 1349,
+      "mtime": 1774826299.0217345,
+      "ext": ".md"
+    },
+    {
+      "name": "raw_assignment.md",
+      "rel_path": "academy/tasks/20260329_Attachment_Practical_Task/tmp/raw_assignment.md",
+      "size": 1248,
+      "mtime": 1774826205.8527482,
+      "ext": ".md"
     },
     {
       "name": "test_discovery.py",

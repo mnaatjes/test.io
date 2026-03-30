@@ -1,0 +1,9 @@
+quiz_id: "quiz_Media and Attachments"
+question_number: 5
+timestamp: "2026-03-29T21:23:00"
+question_text: "Which of the following statements are true about screencasts? *(2 correct answers)"
+provided_answer:
+  - "Don't record any noise (baby screaming, conversations, TV, music, animals etc.)"
+  - "Always record your whole screen."
+reasoning: "Academy notes mandate full screen recordings (to see the URL and system info) and prohibit background audio/edits/speed-ups to maintain professional standards."
+status: "answered"

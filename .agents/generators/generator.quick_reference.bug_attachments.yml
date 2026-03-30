@@ -1,0 +1,17 @@
+quick_reference:
+  topic: "Bug Report Attachments"
+  source_module: "academy/tmp/bug_attachments.yml"
+  last_updated: "2026-03-29"
+
+  cli_summary:
+    - "!! CRITICAL: Functional bugs ALWAYS require a screencast."
+    - "-> ACTION: URL field must be visible on all website attachments."
+    - "X  AVOID: Do not show personal info, other customers' data, or non-English system text."
+    - "-> ACTION: Date and time MUST be visible (use notification swipe on mobile)."
+    - "!! CRITICAL: Screencasts must be in MP4 format; max size 25MB."
+
+  final_validation:
+    - "Is it a functional bug? If yes, is there a screencast?"
+    - "Is the date/time visible?"
+    - "Is the resolution high enough to read text?"
+    - "If it's an app crash, is the crash log attached?"

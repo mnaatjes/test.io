@@ -1,0 +1,59 @@
+topic: How to keep your device safe for Testing
+summary: Tips and best practices for protecting testing devices against viruses, data leakage, and spam.
+author: Nikola Jonic
+updated: over 5 months ago
+data_leakage_prevention:
+  browser_security:
+    - Keep browser version up-to-date.
+    - Do not save passwords or login data in the browser.
+  passwords:
+    - Use strong, unique passwords.
+    - Avoid guessable info (names, birthdays).
+    - Enable Two-Factor Authentication (2FA).
+    - Shield device when entering passwords in public.
+  network:
+    - Use WPA3 encryption for Wi-Fi.
+    - Use a VPN for sensitive activities on public Wi-Fi.
+  encryption:
+    - Enable device encryption on mobile and desktop.
+  physical_security:
+    - Use lock screen passwords or biometrics.
+    - Lock computer when not in use.
+    - Never leave devices unattended in public (even briefly).
+    - Use safes/safe deposits when traveling.
+  backups:
+    - Back up files to external drives or secure cloud.
+    - Enable automatic backups and verify integrity.
+virus_protection:
+  software:
+    - Use reputable antivirus software.
+    - Perform regular malware/virus scans.
+  updates:
+    - Regularly update OS, apps, and antivirus programs.
+spam_protection:
+  skepticism:
+    - Avoid clicking links or downloading attachments from unknown sources.
+    - Verify legitimacy of unexpected messages.
+  tools:
+    - Enable spam filters on email accounts.
+  traps_to_avoid:
+    - Do not click "unsubscribe" links in suspicious emails (confirms address to spammers).
+  device_settings:
+    - Customize mobile notification settings to reduce spam exposure.
+  education:
+    - Stay informed about phishing techniques and scams.
+additional_tips:
+  - Regularly review and manage app permissions.
+  - Use encrypted messaging apps for confidential conversations.
+  - Regularly monitor account activity and statements.
+warnings_malicious_sites:
+  - Imageconvertors[.]com (Phishing)
+  - convertitoremp3[.]it (Riskware)
+  - convertisseurs-pdf[.]com (Riskware)
+  - convertscloud[.]com (Phishing)
+  - convertix-api[.]xyz (Trojan)
+  - convertallfiles[.]com (Adware)
+  - freejpgtopdfconverter[.]com (Riskware)
+  - primeconvertapp[.]com (Riskware)
+  - 9convert[.]com (Riskware)
+  - Convertpro[.]org (Riskware)

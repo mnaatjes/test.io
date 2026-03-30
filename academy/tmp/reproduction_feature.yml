@@ -1,0 +1,22 @@
+topic: Reproduction Feature
+summary: How to locate, submit, and remove bug reproductions on the Test IO interface.
+author: Markus
+updated: over a month ago
+finding_reproductions:
+  - location: Dashboard
+    detail: Find requests for bugs already approved by the Team Leader (TL) in your active tests.
+  - location: Inside Bug Reports
+    detail: Look for the "Start Reproduction" button within other testers' bug reports.
+  - location: Similar Bug Reports List
+    detail: While filing a report, check the "Similar Bugs" list on the right; click the reproduction button if your bug is already listed.
+  - location: Bugs List
+    detail: Use the "Reproductions available" toggle switch in the Test Cycle bug list to filter for open slots.
+submission_steps:
+  1. State whether you can reproduce the bug (Positive/Negative).
+  2. Select the used environment.
+  3. Upload the required screencast.
+  4. Click "Create reproduction".
+removal_steps:
+  1. Navigate to the "My Reproductions" tab in the Test Cycle header.
+  2. Open the specific reproduction detail page.
+  3. Click "Delete" in the action bar at the bottom.
