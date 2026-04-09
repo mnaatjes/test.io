@@ -1,0 +1,40 @@
+topic: User Stories
+summary: Learn about User Story testing, reservation rules, execution options, and attachment requirements.
+author: Gemini Agent
+updated: 2026-04-09
+definitions:
+  user_story: Explains expected software behavior from a user perspective (e.g., "A user can add a product to the cart").
+  duration: Usually takes less than 5 minutes to execute.
+reservation_rules:
+  timer: 30-minute slot once started.
+  concurrency_limit: Max 3 reservations at a time.
+  statuses:
+    reserved: Enough testers are already working on it.
+    locked: All available executions completed.
+    limited: Tester reached the 3-reservation limit.
+execution_options:
+  yes: Works thoroughly as described.
+  no: Does not work as expected (Bug report recommended).
+  not_possible_to_test: Blocked due to technical reasons or missing instructions (e.g., no credentials).
+comments:
+  mandatory:
+    - Status "No" (detailed failure description required).
+    - Status "Not possible to test" (clear explanation of the blockage).
+    - Status "Yes" (only if screencast needs additional context).
+  optional:
+    - Status "Yes" (if screencast is self-explanatory, enter "n/a").
+  rules:
+    - Avoid generic phrases like "works as expected".
+    - Do not repeat info visible in the screencast.
+attachments:
+  requirement: Short screencast (max 15 seconds).
+  contents: Must show result of execution, current date, and URL bar.
+  quality: Clicks/taps must be visualized.
+rejection_reasons:
+  - Clicks/taps not visualized.
+  - Attachment broken or not in .mp4 format.
+  - Test instructions not followed.
+  - Screencast longer than 15 seconds.
+  - Low-quality or redundant comment.
+  - Missing URL bar or current date.
+  - Wrong execution status selected.

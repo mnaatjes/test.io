@@ -26,5 +26,10 @@
 ## Professionalism and Edits
 - **No Placeholders:** Reports must be complete when submitted.
 - **Realistic Inputs:** Avoid random characters (e.g., use "Michael" instead of "asdfg").
-- **Edits:** Only for typos or rephrasing to improve quality.
-- **Deletion:** Possible only BEFORE Team Leader review.
+
+## The "AI-Proofing" Rules (Strict Enforcement)
+1. **Step 1 is ALWAYS the URL:** Do not say "Access landing page." Use `1. Open https://...`
+2. **Steps = Actions ONLY:** No "Notes," "Observations," or "Results" allowed in steps. If you can't click it, don't write it.
+3. **One Bug Per Report:** Never report two different components (e.g., Detail Page vs. Quickview) in one report.
+4. **No Speculation:** Never say "I think," "Maybe," or "Customers will be confused." Stick to visible UI facts.
+5. **The Title Formula:** `[Action/Bug] + [Location] + [Trigger]` (e.g., "Quantity skips 1 to 3 on Details Page when clicking +").

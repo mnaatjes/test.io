@@ -12,25 +12,27 @@ bug_report_generator:
   transformation_logic:
     - "Deduplication: Verify steps against previous reports in reports/submitted/."
     - "Normalization: Map severity and type to official Test IO Academy standards."
-    - "Environment Injection: Auto-populate hardware/OS details from main.yml (e.g., Debian 13/i3wm)."
-    - "Technical Validation: Ensure 'Actual Result' is supported by console/terminal logs."
+    - "AI-Proofing: ENFORCE Step 1 is the literal Base URL."
+    - "AI-Proofing: BAN all 'Notes', 'Observations', or 'Results' from the Steps list."
+    - "AI-Proofing: BAN speculation/impact statements from Actual/Expected Results."
 
   # 3. Output A: Human-Readable Submission ("bug_report_<feature>.md")
   markdown_output:
     destination: "reports/drafts/bug_report_{feature}.md"
     structure:
-      title: "[{feature}] - {summary}"
+      title: "[{What happened}] on the [{Where it happened}] when [{When/Trigger Action}]"
       metadata:
-        type: "{type}" # Functional, Visual, Usability, Content
-        severity: "{severity}" # Low, High, Critical
+        type: "Functional"
+        severity: "{severity}"
         environment: "OS: {active_dev_os} | Browser: {browser}"
       content:
         - "### Reproduction Steps"
-        - "{numbered_steps}"
+        - "1. Open {base_url}"
+        - "{action_only_steps}"
         - "### Expected Result"
-        - "{expected_behavior}"
+        - "{factual_observable_outcome}"
         - "### Actual Result"
-        - "{observed_bug}"
+        - "{factual_observed_bug}"
       formatting:
         - "Use bolding for UI elements and error codes."
         - "ADHD_Optimized: Maximum 3 sentences per result description."

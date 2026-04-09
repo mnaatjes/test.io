@@ -19,7 +19,13 @@ progress:
     - "bug_attachments"
     - "screencasts"
     - "screenshots"
+    - "content_bugs"
+    - "user_stories"
+    - "bug_confirmations"
   notes_files:
     - "academy/notes/notes_bug_attachments.md"
     - "academy/notes/notes_screencasts_guide.md"
     - "academy/notes/notes_screenshots_guide.md"
+    - "academy/notes/notes_content_bugs.md"
+    - "academy/notes/notes_user_stories.md"
+    - "academy/notes/notes_bug_confirmations.md"

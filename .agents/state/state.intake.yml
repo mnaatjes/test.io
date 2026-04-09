@@ -1,83 +1,22 @@
 active: false
-end_time: '2026-03-30T00:24:00.747597'
+end_time: '2026-04-09T17:13:29.385229'
 inputs:
-- content: "Reproduction Course\n\nPage 1 / 10\n\nHello and welcome to the Onboarding\
-    \ Reproduction Course of our tester Academy!\n\nIn this module, you will learn\
-    \ everything you need to know about the Reproduction feature on our platform and\
-    \ how you will get paid.\n\nIt will take you around 30 minutes to complete this\
-    \ module. However, you can always come back to finish it later.\n\nThe module\
-    \ is split into two parts:\n1. A workshop covering 3 main topics\n2. A short quiz\
-    \ to test your knowledge\n\nWe all learn in different ways. That is why we let\
-    \ you choose how you prefer to digest the information provided in the workshop\
-    \ \u2013 either by watching short videos or by going through the article, or both!"
-  timestamp: '2026-03-30T00:21:58.370515'
-- content: "Bug Reproductions\n\nWhat are reproductions and what are they good for?\n\
-    Written by Markus\nUpdated over a year ago\n\nReproductions are useful for customers\
-    \ because they indicate which environments are concerned and if the problem is\
-    \ device-specific or not. \n\nTypes:\n- Positive Reproduction: You experience\
-    \ the same bug following the same steps.\n- Negative Reproduction: You cannot\
-    \ reproduce the bug; function works on your device.\n- Note: If you experience\
-    \ a DIFFERENT bug, do NOT submit a reproduction. Submit a new bug report.\n\n\
-    Reproduction Session:\n- 30 minutes to finish the report after clicking 'Start\
-    \ reproduction'.\n- Seat is reserved during this time.\n- If not submitted in\
-    \ time, it expires and seat opens up.\n\nRules for Attachments:\n- Screencast\
-    \ is REQUIRED.\n- Max length: 15 seconds (usually).\n- Rare exception: Longer\
-    \ if triggering action takes more time, but not longer than original tester's\
-    \ screencast.\n- Must include: Current date and URL bar (for websites).\n- App\
-    \ Crashes: Upload crash log + screencast (timings must be coherent).\n- Compliance:\
-    \ Must follow all Bug Report Attachment rules. Rejection follows non-compliance\
-    \ (e.g., too long, unnecessary steps).\n- OOS Warning: Reproducing out-of-scope\
-    \ bugs (e.g., live orders) leads to rejection and warning.\n\nConcurrency Rules:\n\
-    - Only one task at a time.\n- Cannot run simultaneously with: Test Case, Test\
-    \ Session, Bug Fix/Report Confirmation.\n\nVisibility of 'Start reproduction'\
-    \ button:\n- While test is running.\n- Only for functional bug reports.\n- Only\
-    \ for reports not yet reviewed by customer.\n- Only if max reproduction count\
-    \ isn't reached."
-  timestamp: '2026-03-30T00:22:37.136759'
-- content: 'Reproduction Feature
-
-
-    How to find the reproduction feature on our interface
-
-    Written by Markus
-
-    Updated over a month ago
-
-
-    Ways to find Reproductions:
-
-    1. Dashboard: Reproduction requests for bugs already approved by the TL in tests
-    you''re participating in.
-
-    2. Inside Bug Reports: A ''Start Reproduction'' button appears if you''re allowed
-    to reproduce it.
-
-    3. Similar Bug Reports List: When creating a bug, check the list on the right.
-    If it''s already reported, click the reproduction button and stop your report.
-
-    4. Bugs List: Use the ''Reproductions available'' toggle in the Bug list of a
-    Test Cycle to see open slots.
-
-
-    How to submit:
-
-    - State if you can reproduce (Positive/Negative).
-
-    - Select your environment.
-
-    - Upload screencast.
-
-    - Click ''Create reproduction''.
-
-
-    How to remove:
-
-    - Go to ''My Reproductions'' tab in the Test Cycle header.
-
-    - Open the reproduction details.
-
-    - Click ''Delete'' in the bottom action bar.'
-  timestamp: '2026-03-30T00:23:09.325851'
-session_id: intake_20260330_002146
-start_time: '2026-03-30T00:21:46.495963'
-title: Reproduction
+- content: "Bug Fix & Bug Report Confirmation\nRetesting bugs (Fix Confirmation) or\
+    \ providing extra info/verification (Report Confirmation) outside a test cycle.\n\
+    Eligibility: Pass course, >50 bugs submitted, Silver level or higher.\nDashboard:\
+    \ Found in 'Bug Confirmations' section.\n\nProcess:\n- Reservation: 30-minute\
+    \ timer once 'Begin' is clicked.\n- Execution: Follow original steps to reproduce\
+    \ exactly.\n- Outcomes (Fix): Bug is fixed, Bug is not fixed, Can't proceed.\n\
+    - Outcomes (Report): Bug exists, Bug doesn't exist, Can't proceed.\n- Submission:\
+    \ Final and direct to customer (cannot edit after submit).\n\nRequirements & Attachments:\n\
+    - Comments: Mandatory for negative outcomes or 'Can't proceed'. Describe actual\
+    \ result precisely.\n- Attachments: Screencast for actions, Screenshot for UI.\
+    \ Must follow general rules (URL/Date).\n- Special Requests: Customers may ask\
+    \ for:\n  - Screen size / Browser version.\n  - Internet speed (show fast.com\
+    \ at start/end of screencast).\n  - Console logs / Crash logs.\n  - External camera\
+    \ usage.\n\nProfessionalism: Feedback goes directly to the customer. No speculation\
+    \ or jargon; focus on the user's perspective."
+  timestamp: '2026-04-09T17:13:29.268851'
+session_id: intake_20260409_171329
+start_time: '2026-04-09T17:13:29.157185'
+title: Bug_Confirmations

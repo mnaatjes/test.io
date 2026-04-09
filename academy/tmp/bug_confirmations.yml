@@ -1,0 +1,24 @@
+topic: Bug_Confirmations
+summary: Details on eligibility, execution, and attachment requirements for Bug Fix and Bug Report Confirmations.
+author: Gemini Agent
+updated: 2026-04-09
+eligibility:
+  min_bugs: 50
+  min_level: Silver
+  prerequisite: Bug Fix/Report Confirmation Course
+workflow:
+  reservation_time: 30 minutes
+  finality: Cannot edit after submission
+outcomes:
+  fix_confirmation: [Bug is fixed, Bug is not fixed, Can't proceed]
+  report_confirmation: [Bug exists, Bug doesn't exist, Can't proceed]
+attachments:
+  general: Screencast for actions, Screenshot for UI
+  special_requests:
+    internet_speed: Show fast.com at start and end
+    logs: Console or Crash logs
+    environment: Screen size or Browser version
+    camera: External camera usage
+comments:
+  mandatory_for: [Not fixed, Doesn't exist, Can't proceed]
+  style: Precise, objective, user-perspective

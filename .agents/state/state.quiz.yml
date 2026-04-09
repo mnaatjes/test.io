@@ -1,144 +1,133 @@
 active: false
-end_time: '2026-03-30T00:35:25.321987'
+end_time: '2026-04-09T18:09:23.946816'
 questions:
-- answer: 1, 3, and 4.
-  question: 'Q1: Where can you submit a Bug Reproduction? (select 3 answers)
-
-    1. In the "Similar bug reports" list on the right-hand side of the bug report
-    submission form
-
-    2. On the Test Overview page
-
-    3. On your Tester Dashboard under "Bugs you can reproduce" section
-
-    4. When viewing another tester''s bug report
-
-    '
-  reasoning: 'The "Reproduction Feature Notes" and "Reproduction Feature Quick Reference"
-    explicitly list these four ways to find reproductions: Dashboard (3), Inside Bug
-    Reports (4), Similar Bug Reports List (1), and the Bugs List toggle. The Test
-    Overview page (2) is not mentioned as a direct place to submit reproductions.
-
-    '
-  timestamp: '2026-03-30T00:26:39.047892'
-- answer: 1. A Reproduction that shows that you cannot reproduce the described bug
-    on your device after following the same steps
-  question: 'Q2: What is a Negative Reproduction?
-
-    1. A Reproduction that shows that you cannot reproduce the described bug on your
-    device after following the same steps
-
-    2. A Reproduction that shows that you can reproduce the described bug on your
-    device after following the same steps
-
-    3. There are no Negative Reproductions on the test IO platform
-
-    4. A poorly documented Reproduction
-
-    '
-  reasoning: 'As defined in the "Bug Reproductions Notes", a negative reproduction
-    is when you follow the same steps as the original tester but cannot reproduce
-    the bug, showing instead that the function works on your device.
-
-    '
-  timestamp: '2026-03-30T00:28:00.000000'
-- answer: 2, 3, and 4.
-  question: 'Q3: What are the requirements for the Bug Reproduction screencast on
-    the Test IO platform? (select 3 answers)
-
-    1. The screencast should be at least 1 minute long.
-
-    2. The screencast should be no longer than 15 seconds in most cases
-
-    3. Showing the action that triggers the bug is enough in most cases
-
-    4. The screencast must show the current date
-
-    '
-  reasoning: 'The "Bug Reproductions Notes" state that a screencast is required, should
-    usually be no longer than 15 seconds, and must include the current date. Showing
-    only the triggering action is typically sufficient.
-
-    '
-  timestamp: '2026-03-30T00:30:00.000000'
-- answer: 1. 30 minutes.
-  question: 'Q4: How long is a reproduction session?
-
-    1. 30 minutes.
-
-    2. 45 minutes.
-
-    3. 1 hour.
-
-    '
-  reasoning: 'The "Bug Reproductions Notes" and "Reproduction Feature Notes" both
-    confirm that after clicking "Start reproduction", the tester has 30 minutes to
-    finish the report.
-
-    '
-  timestamp: '2026-03-30T00:32:00.000000'
-- answer: 1 and 2.
-  question: 'Q5: In which cases can you submit a Bug Reproduction? (select 2 answers)
-
-    1. The bug report has not been reviewed by the Team Leader yet and there is an
-    available Reproduction spot.
-
-    2. The test is still running.
-
-    3. It is your own bug.
-
-    4. The bug report has already been reviewed by the Customer.
-
-    '
-  reasoning: 'Visibility criteria in the "Bug Reproductions Notes" specify that reproductions
-    are available while the test is running (2) and only for reports not yet reviewed
-    by the customer (which excludes 4). They are for other testers'' bugs (excludes
-    3). The "Similar bug reports" rule confirms you can reproduce a bug before TL
-    review if it appears while you are filing.
-
-    '
-  timestamp: '2026-03-30T00:34:00.000000'
-- answer: 1 and 2.
-  question: 'Q6: What is wrong about the following Reproduction attachment for the
-    Reproduction? (select 2 answers)
-
-    1. The date is not included whereas every Reproduction attachment should show
-    the current date.
-
-    2. The URL is not shown whereas every Reproduction attachment should show the
-    URL.
-
-    3. It is too short.
-
-    4. It is too long.
-
-    '
-  reasoning: 'Every reproduction screencast MUST show the current date and the URL
-    bar (for websites). Missing either of these is a common reason for rejection.
-
-    '
-  timestamp: '2026-03-30T00:36:00.000000'
-- answer: 2. The Reproduction would be rejected as the wrong device is selected and
-    a crash log file is missing.
-  question: 'Q7: Would this Reproduction be accepted by test IO?
-
-    An app crash reproduced on an Apple iPhone 11 Pro Max in Safari.
-
-    1. The reproduction would be accepted by test IO.
-
-    2. The Reproduction would be rejected as the wrong device is selected and a crash
-    log file is missing.
-
-    NOTE: Example Image shows Multiple devices with Macbook Air and google chrome
-    browser selected. "Upload a screenshot or screencast" has file "reproduction.mp4"
-
-    '
-  reasoning: 'Based on the "Bug Reproductions Notes", when reproducing an app crash,
-    uploading a crash log file is mandatory in addition to the screencast. Furthermore,
-    the selected environment must match the device used. In this case, selecting MacBook/Chrome
-    for an iPhone/Safari bug is incorrect and would lead to rejection.
-
-    '
-  timestamp: '2026-03-30T00:38:00.000000'
-quiz_id: quiz_topic=Reproduction
-start_time: '2026-03-30T00:26:13.221007'
+- answer: To confirm if a previously fixed bug is still present or resolved
+  question: 'Q1: What is the primary goal of a Bug Fix Confirmation task? (To document
+    additional bugs discovered during testing | To create a new bug report for the
+    customer | To submit a detailed test case for future tests | To confirm if a previously
+    fixed bug is still present or resolved)'
+  reasoning: According to the 'Bug Confirmations (Fix & Report) Notes', a Bug Fix
+    Confirmation is a request from the customer to verify if a bug reported in a previous
+    test has been successfully resolved or is still occurring after a fix has been
+    applied.
+  timestamp: '2026-04-09T17:56:45.294092'
+- answer: Passing the Bug Report Confirmation course, submitting over 50 bugs, and
+    achieving Silver level or higher
+  question: 'Q2: What is required to unlock a Bug Report Confirmation task? (Having
+    a premium account on the platform | Completion of a test case with over 100 bugs
+    reported | Achieving a Silver level or higher in the Bug Fix Confirmation course
+    | Passing the Bug Report Confirmation course, submitting over 50 bugs, and achieving
+    Silver level or higher)'
+  reasoning: 'The ''Bug Confirmations Notes'' specify three requirements: passing
+    the relevant academy course, having a track record of at least 50 submitted bugs,
+    and maintaining a tester ranking of Silver level or higher.'
+  timestamp: '2026-04-09T17:59:15.123456'
+- answer: null
+  question: 'Q2: What is required to unlock a Bug Report Confirmation task? (Having
+    a premium account on the platform | Completion of a test case with over 100 bugs
+    reported | Achieving a Silver level or higher in the Bug Fix Confirmation course
+    | Passing the Bug Report Confirmation course, submitting over 50 bugs, and achieving
+    Silver level or higher)'
+  reasoning: null
+  timestamp: '2026-04-09T17:59:36.039186'
+- answer: 30 minutes
+  question: 'Q3: How long do you reserve a Bug Fix Confirmation task once you click
+    ''Begin?'' (60 minutes | 30 minutes | 15 minutes | 45 minutes)'
+  reasoning: As noted in the 'Bug Confirmations (Fix & Report) Notes', once you click
+    the 'Begin' button, the task is reserved for 30 minutes. This prevents other testers
+    from claiming it while you execute the confirmation.
+  timestamp: '2026-04-09T18:02:10.555111'
+- answer: null
+  question: 'Q3: How long do you reserve a Bug Fix Confirmation task once you click
+    ''Begin?'' (60 minutes | 30 minutes | 15 minutes | 45 minutes)'
+  reasoning: null
+  timestamp: '2026-04-09T18:00:01.699185'
+- answer: A screencast when any action is required; a screenshot for UI issues
+  question: "Q4: Which attachment should be provided if the bug is fixed in a Bug\
+    \ Fix Confirmation? (A screenshot showing that the issue is resolved (for dynamic\
+    \ bugs) | A screenshot of the device\u2019s home screen | A screencast when any\
+    \ action is required; a screenshot for UI issues | A screencast showing the issue\
+    \ is resolved)"
+  reasoning: 'The academy materials specify that for Bug Fix Confirmations, the type
+    of attachment depends on the nature of the bug: if reproduction requires user
+    actions or navigation, a screencast is mandatory. If the bug is purely visual/UI-based,
+    a screenshot is acceptable.'
+  timestamp: '2026-04-09T18:04:45.123456'
+- answer: null
+  question: "Q4: Which attachment should be provided if the bug is fixed in a Bug\
+    \ Fix Confirmation? (A screenshot showing that the issue is resolved (for dynamic\
+    \ bugs) | A screenshot of the device\u2019s home screen | A screencast when any\
+    \ action is required; a screenshot for UI issues | A screencast showing the issue\
+    \ is resolved)"
+  reasoning: null
+  timestamp: '2026-04-09T18:01:53.400290'
+- answer: Select 'Can't proceed' and provide feedback in the comment section
+  question: 'Q5: What should you do if you cannot proceed with a Bug Report Confirmation
+    task due to technical issues? (Leave the task unclaimed | Submit the task without
+    completing it | Select ''Can''t proceed'' and provide feedback in the comment
+    section | Submit a negative report with no explanation)'
+  reasoning: If a tester is blocked by technical issues (e.g., login failure, site
+    down) from completing the confirmation steps, the platform provides a 'Can't proceed'
+    option. Selecting this and providing a detailed comment is the required procedure.
+  timestamp: '2026-04-09T18:07:30.123456'
+- answer: null
+  question: 'Q5: What should you do if you cannot proceed with a Bug Report Confirmation
+    task due to technical issues? (Leave the task unclaimed | Submit the task without
+    completing it | Select ''Can''t proceed'' and provide feedback in the comment
+    section | Submit a negative report with no explanation)'
+  reasoning: null
+  timestamp: '2026-04-09T18:02:15.887166'
+- answer: Select 'Bug is not fixed' and provide feedback in the comment section
+  question: 'Q6: What option will you select if the bug is not fixed during a Bug
+    Fix Confirmation? (Mark the bug as fixed | Select ''Bug is not fixed'' and provide
+    feedback in the comment section | Submit the task without feedback | Request the
+    customer to fix it)'
+  reasoning: If the original bug still occurs after following the reproduction steps
+    exactly, the tester must select 'Bug is not fixed'. Providing a detailed comment
+    describing the actual result is mandatory to help the customer understand the
+    failure.
+  timestamp: '2026-04-09T18:10:05.123456'
+- answer: null
+  question: 'Q6: What option will you select if the bug is not fixed during a Bug
+    Fix Confirmation? (Mark the bug as fixed | Select ''Bug is not fixed'' and provide
+    feedback in the comment section | Submit the task without feedback | Request the
+    customer to fix it)'
+  reasoning: null
+  timestamp: '2026-04-09T18:03:45.047531'
+- answer: In the 'Available Tasks' menu in the left sidebar
+  question: 'Q7: Where can you find the Bug Fix Confirmation task after qualifying
+    for it? (On the ''Completed Tasks'' page | Only the ''Available Tasks'' section
+    | Under ''My Profile'' | In the ''Available Tasks'' menu in the left sidebar)'
+  reasoning: While Bug Confirmations appear on the Tester Dashboard, they are also
+    centrally managed within the 'Available Tasks' menu, typically located in the
+    left sidebar of the platform interface once a tester has qualified for these individual
+    tasks.
+  timestamp: '2026-04-09T18:15:30.123456'
+- answer: null
+  question: 'Q7: Where can you find the Bug Fix Confirmation task after qualifying
+    for it? (On the ''Completed Tasks'' page | Only the ''Available Tasks'' section
+    | Under ''My Profile'' | In the ''Available Tasks'' menu in the left sidebar)'
+  reasoning: null
+  timestamp: '2026-04-09T18:06:42.927422'
+- answer: A specific attachment, such as showing internet speed, showing the console,
+    or adding a crash log (depending on the customer's request)
+  question: 'Q8: Which of the following is required when submitting a Bug Report Confirmation?
+    (A link to the original bug report in a separate email | A description of the
+    bug with the exact error code | A specific attachment, such as showing internet
+    speed, showing the console, or adding a crash log (depending on the customer''s
+    request) | A list of all test cases related to the bug)'
+  reasoning: The 'Bug Confirmations Notes' highlight that for Bug Report Confirmations,
+    customers can request specific technical evidence. This includes showing internet
+    speed (via fast.com), showing the browser console, or attaching crash logs, depending
+    on the individual task instructions.
+  timestamp: '2026-04-09T18:22:15.123456'
+- answer: null
+  question: 'Q8: Which of the following is required when submitting a Bug Report Confirmation?
+    (A link to the original bug report in a separate email | A description of the
+    bug with the exact error code | A specific attachment, such as showing internet
+    speed, showing the console, or adding a crash log (depending on the customer''s
+    request) | A list of all test cases related to the bug)'
+  reasoning: null
+  timestamp: '2026-04-09T18:07:21.184732'
+quiz_id: quiz_Bug_Confirmations
+start_time: '2026-04-09T17:53:47.025044'
